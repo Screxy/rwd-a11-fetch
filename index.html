@@ -9,8 +9,11 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a href="#"><img src="/img/main-logo.png" alt="Main logo" /></a>
+        <a href="#" class="header__link"
+          ><img src="/img/main-logo.png" alt="Main logo" class="header__img"
+        /></a>
         <svg
+          class="header__burger"
           width="20"
           height="27"
           viewBox="0 0 20 27"
@@ -31,8 +34,12 @@
             According to Forbes, a Video can boost conversion rate by 80%, and
             grow revenue by average 49%.
           </p>
-          <img src="/img/home-main.jpg" alt="hello" />
-          <img src="/img/baseline-play-arrow.svg" alt="play" />
+          <img src="/img/home-main.jpg" alt="hello" class="home__img" />
+          <img
+            src="/img/baseline-play-arrow.svg"
+            alt="play"
+            class="home__img"
+          />
           <form action="#" class="home__form form">
             <label class="form__label">
               <span class="visually-hidden">Enter your name</span>
@@ -90,17 +97,31 @@
           <p class="clients__text">You might have heard of them</p>
           <ul class="clients__company">
             <li class="clients__logo">
-              <img src="/img/samsung-logo.png" alt="Samsung logo" />
+              <img
+                class="clients__img"
+                src="/img/samsung-logo.png"
+                alt="Samsung logo"
+              />
             </li>
             <li class="clients__logo">
-              <img src="/img/viacom-logo.png" alt="Viacom logo" />
+              <img
+                class="clients__img"
+                src="/img/viacom-logo.png"
+                alt="Viacom logo"
+              />
             </li>
             <li class="clients__logo">
-              <img src="/img/accenture-logo.png" alt="Accenture logo" />
+              <img
+                class="clients__img"
+                src="/img/accenture-logo.png"
+                alt="Accenture logo"
+              />
             </li>
           </ul>
           <label class="clients__label">
-            <span class="visually-hidden">Select image</span>
+            <span class="visually-hidden">
+              Select image
+            </span>
 
             <input
               type="radio"
@@ -179,15 +200,51 @@
               />
             </label>
 
-            <ul class="gallery__img gallery-list">
-              <li><img src="/img/gallery-lucy.jpg" alt="lucy" /></li>
-              <li><img src="/img/gallery-women.jpg" alt="women" /></li>
-              <li><img src="/img/gallery-men.jpg" alt="men" /></li>
-              <li><img src="/img/gallery-speaker.jpg" alt="speaker" /></li>
-              <li><img src="/img/gallery-cityes.jpg" alt="city" /></li>
-              <li><img src="/img/gallery-girls.jpg" alt="girls" /></li>
+            <ul class="gallery__list gallery-list">
+              <li class="gallery-list__item">
+                <img
+                  class="gallery-list__img"
+                  src="/img/gallery-lucy.jpg"
+                  alt="lucy"
+                />
+              </li>
+              <li class="gallery-list__item">
+                <img
+                  class="gallery-list__img"
+                  src="/img/gallery-women.jpg"
+                  alt="women"
+                />
+              </li>
+              <li class="gallery-list__item">
+                <img
+                  class="gallery-list__img"
+                  src="/img/gallery-men.jpg"
+                  alt="men"
+                />
+              </li>
+              <li class="gallery-list__item">
+                <img
+                  class="gallery-list__img"
+                  src="/img/gallery-speaker.jpg"
+                  alt="speaker"
+                />
+              </li>
+              <li class="gallery-list__item">
+                <img
+                  class="gallery-list__img"
+                  src="/img/gallery-cityes.jpg"
+                  alt="city"
+                />
+              </li>
+              <li class="gallery-list__item">
+                <img
+                  class="gallery-list__img"
+                  src="/img/gallery-girls.jpg"
+                  alt="girls"
+                />
+              </li>
             </ul>
-            <a href="#">Show More</a>
+            <a class="gallery__link" href="#">Show More</a>
           </div>
         </div>
       </section>
@@ -206,11 +263,19 @@
           </div>
           <label class="description__label">
             <span class="visually-hidden"> Select image</span>
-            <input type="radio" name="description-card-selector" />
+            <input
+              class="description__selector"
+              type="radio"
+              name="description-card-selector"
+            />
           </label>
           <label class="description__label">
             <span class="visually-hidden"> Select image</span>
-            <input type="radio" name="description-card-selector" />
+            <input
+              class="description__selector"
+              type="radio"
+              name="description-card-selector"
+            />
           </label>
         </div>
       </section>
@@ -222,7 +287,11 @@
             Company?
           </p>
           <div class="feedback__card feedback-card">
-            <img src="/img/finger-like.svg" alt="finger like" />
+            <img
+              class="feedback-card__img"
+              src="/img/finger-like.svg"
+              alt="finger like"
+            />
             <h3 class="feedback-card__title">Error Free Delivery</h3>
             <p class="feedback-card__text">
               Our Creative Directors ensure thorough quality checks before any
@@ -271,6 +340,7 @@
           <ul class="examples__list">
             <li class="examples__card examples-card">
               <img
+                class="examples-card__img"
                 src="/img/animated-explainer-video.jpg"
                 alt="Animated Explainer Video"
               />
@@ -290,6 +360,7 @@
             </li>
             <li class="examples__card examples-card">
               <img
+                class="examples-card__img"
                 src="/img/product-explainer-video.jpg"
                 alt="Product Explainer Video"
               />
@@ -308,6 +379,7 @@
             </li>
             <li class="examples__card examples-card">
               <img
+                class="examples-card__img"
                 src="/img/whiteboard-explainer-video.jpg"
                 alt="Whiteboard Explainer Video"
               />
@@ -325,7 +397,11 @@
               <a href="#" class="examples-card__link">Get a Quote</a>
             </li>
             <li class="examples__card examples-card">
-              <img src="/img/live-shoot.jpg" alt="Live Shoot" />
+              <img
+                class="examples-card__img"
+                src="/img/live-shoot.jpg"
+                alt="Live Shoot"
+              />
               <h3 class="examples-card__title">Live Shoot</h3>
               <p class="examples-card__text">
                 Impressions are important! And nothing can help you introduce
@@ -355,10 +431,18 @@
             </li>
           </ul>
           <button class="reviews__arrow">
-            <img src="/img/left-arrow.svg" alt="arrow to left" />
+            <img
+              class="reviews__img"
+              src="/img/left-arrow.svg"
+              alt="arrow to left"
+            />
           </button>
           <button class="reviews__arrow">
-            <img src="/img/right-arrow.svg" alt="arrow to left" />
+            <img
+              class="reviews__img"
+              src="/img/right-arrow.svg"
+              alt="arrow to left"
+            />
           </button>
           <div class="reviews__target target">
             <h3 class="target__title">Ready to start your video?</h3>
@@ -369,92 +453,81 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__company-text-block company-text-block">
-          <h3 class="company-text-block__title">Company</h3>
-          <ul class="company-text-block__list">
-            <li class="company-text-block__item">
-              <a href="#" class="company-text-block__link">About us</a>
+        <div class="footer__company company">
+          <h3 class="company__title">Company</h3>
+          <ul class="company__list">
+            <li class="company__item">
+              <a href="#" class="company__link">About us</a>
             </li>
-            <li class="company-text-block__item">
-              <a href="#" class="company-text-block__link">Our Work</a>
+            <li class="company__item">
+              <a href="#" class="company__link">Our Work</a>
             </li>
-            <li class="company-text-block__item">
-              <a href="#" class="company-text-block__link">Our Blog</a>
+            <li class="company__item">
+              <a href="#" class="company__link">Our Blog</a>
             </li>
-            <li class="company-text-block__item">
-              <a href="#" class="company-text-block__link">Track Oder</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__industries-text-block industries-text-block">
-          <h3 class="industries-text-block__title">Industries</h3>
-          <ul class="industries-text-block__list">
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">Education</a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">E-commerce</a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">Entertainment</a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">
-                Financial Services
-              </a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link"> Healthcare </a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">
-                Information Technology
-              </a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">
-                Marketing & Advertising
-              </a>
-            </li>
-            <li class="industries-text-block__item">
-              <a href="#" class="industries-text-block__link">Travel</a>
+            <li class="company__item">
+              <a href="#" class="company__link">Track Oder</a>
             </li>
           </ul>
         </div>
-        <div class="footer__phone-text-block phone-text-block">
-          <h3 class="phone-text-block__title">Phone</h3>
-          <a href="tel:+919643313012" class="phone-text-block__link">
-            +91 9643313012
-          </a>
+        <div class="footer__industries industries">
+          <h3 class="industries__title">Industries</h3>
+          <ul class="industries__list">
+            <li class="industries__item">
+              <a href="#" class="industries__link">Education</a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link">E-commerce</a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link">Entertainment</a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Financial Services </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Healthcare </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Information Technology </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Marketing & Advertising </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link">Travel</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__email-text-block email-text-block">
-          <h3 class="email-text-block__title">Email</h3>
-          <a
-            href="mailto:sales@mysterymonks.com"
-            class="email-text-block__link"
-          >
+        <div class="footer__phone phone">
+          <h3 class="phone__title">Phone</h3>
+          <a href="tel:+919643313012" class="phone__link"> +91 9643313012 </a>
+        </div>
+        <div class="footer__email email">
+          <h3 class="email__title">Email</h3>
+          <a href="mailto:sales@mysterymonks.com" class="email__link">
             sales@mysterymonks.com
           </a>
         </div>
-        <div class="footer__socials-block socials-block">
-          <ul class="socials-block__list">
-            <li class="socials-block__item">
-              <a href="#" class="socials-block__link"
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link"
                 ><img src="/img/facebook.svg" alt="facebook logo"
               /></a>
             </li>
-            <li class="socials-block__item">
-              <a href="#" class="socials-block__link"
+            <li class="socials__item">
+              <a href="#" class="socials__link"
                 ><img src="/img/twitter.svg" alt="twitter logo"
               /></a>
             </li>
-            <li class="socials-block__item">
-              <a href="#" class="socials-block__link"
+            <li class="socials__item">
+              <a href="#" class="socials__link"
                 ><img src="/img/linkedin.svg" alt="linkedin logo"
               /></a>
             </li>
-            <li class="socials-block__item">
-              <a href="#" class="socials-block__link"
+            <li class="socials__item">
+              <a href="#" class="socials__link"
                 ><img src="/img/youtube.svg" alt="youtube logo"
               /></a>
             </li>
