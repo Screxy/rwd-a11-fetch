@@ -1,199 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mystery Monks</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__wrapper wrapper">
-            <a href="#"><img src="/img/main-logo.png" alt="Main logo"></a>
-            <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="5" width="20" height="4" rx="2" fill="#EF5537"/>
-                <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537"/>
-                <rect y="23" width="20" height="4" rx="2" fill="#EF5537"/>
-            </svg>
-        </div>
+      <div class="header__wrapper">
+        <a href="#"><img src="/img/main-logo.png" alt="Main logo" /></a>
+        <svg
+          width="20"
+          height="27"
+          viewBox="0 0 20 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="5" width="20" height="4" rx="2" fill="#EF5537" />
+          <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" />
+          <rect y="23" width="20" height="4" rx="2" fill="#EF5537" />
+        </svg>
+      </div>
     </header>
     <main>
-        <section class="home">
-            <div class="home__wrapper wrapper">
-                <h1 class="home__title">Best Animation & Video Production Company</h1>
-                <p class="home__text">According to Forbes, a Video can boost conversion rate by 80%, and grow revenue by average 49%.</p>
-                <img src="/img/home-main.jpg" alt="hello">
-                <img src="/img/baseline-play-arrow.svg" alt="play">
-                <form action="#" class="home__form form">
-                    <input type="text" class="form__name" placeholder="First Name">
-                    <input type="text" class="form__surname" placeholder="Last Name">
-                    <input type="text" class="form__email" placeholder="Email Address">
-                    <input type="text" class="form__number" placeholder="Phone number">
-                    <textarea name="requirement" id="requirement" cols="30" rows="10" class="form__requirement" placeholder="Requirement"></textarea>
-                    <button type="submit" class="form__submit">Get Info & Pricing</button>
-                </form>
-            </div>
-        </section>
-        <section class="clients">
-            <div class="clients__wrapper wrapper">
-                <h2 class="clients__title">Our Clients</h2>
-                <p class="clients__text">You might have heard of them</p>
-                <ul class="clients__company">
-                    <li class="clients__logo"><img src="/img/samsung-logo.png" alt="Samsung logo"></li>
-                    <li class="clients__logo"><img src="/img/viacom-logo.png" alt="Viacom logo"></li>
-                    <li class="clients__logo"><img src="/img/accenture-logo.png" alt="Accenture logo"></li>
-                    <input type="radio" class="clients__selector" name="selector-of-company" id="selector-of-company1of6">
-                    <input type="radio" class="clients__selector" name="selector-of-company" id="selector-of-company2of6">
-                    <input type="radio" class="clients__selector" name="selector-of-company" id="selector-of-company3of6">
-                    <input type="radio" class="clients__selector" name="selector-of-company" id="selector-of-company4of6">
-                </ul>
-            </div>
-        </section>
-        <section class="portfolio">
-            <div class="portfolio__wrapper wrapper">
-                <h2 class="portfolio__title">Portfolio</h2>
-                <p class="portfolio__text">Explore some of the work we`re especially proud of.</p>
-                <div class="portfolio__gallery gallery">
-                    <input type="radio" class="gallery__selector" name="selector-of-portfolio" id="selector-of-portfolio1of4">
-                    <input type="radio" class="gallery__selector" name="selector-of-portfolio" id="selector-of-portfolio3of4">
-                    <input type="radio" class="gallery__selector" name="selector-of-portfolio" id="selector-of-portfolio4of4">
-                    <input type="radio" class="gallery__selector" name="selector-of-portfolio" id="selector-of-portfolio5of4">
-                    <ul class="gallery__img gallery-list">
-                        <li><img src="/img/gallery-lucy.jpg" alt="lucy"></li>
-                        <li><img src="/img/gallery-women.jpg" alt="women"></li>
-                        <li><img src="/img/gallery-men.jpg" alt="men"></li>
-                        <li><img src="/img/gallery-speaker.jpg" alt="speaker"></li>
-                        <li><img src="/img/gallery-cityes.jpg" alt="city"></li>
-                        <li><img src="/img/gallery-girls.jpg" alt="girls"></li>
-                    </ul>
-                    <a href="#">Show More</a>
-                </div>
-            </div>
-        </section>
-        <section class="description">
-            <div class="description__wrapper wrapper">
-                <h2 class="description__title">About Us</h2>
-                <p class="description__text">About Our Video Creation Company!</p>
-                <div class="description__card description-card">
-                    <span class="description-card__count">2000<sup>+</sup></span>
-                    <h3 class="description-card__title">Clients Served</h3>
-                    <p class="description-card__text">We`ve been doing this for years and will be doing it for many more! Our client count has touched the 2k bar and continues to grow with uninterrupted momentum!</p>
-                </div>
-                <input type="radio" name="description-card-selector" id="description-card-selector1of2">
-                <input type="radio" name="description-card-selector" id="description-card-selector2of2">
-            </div>
-        </section>
-        <section class="feedback">
-            <div class="feedback__wrapper wrapper">feedback
-                <h2 class="feedback__title">Why us?</h2>
-                <p class="feedback__text">Why Choose Mystery Monks As Your Video Production and Animation Company?</p>
-                <div class="feedback__card feedback-card">
-                    <img src="/img/finger-like.svg" alt="finger like">
-                    <h3 class="feedback-card__title">Error Free Delivery</h3>
-                    <p class="feedback-card__text">Our Creative Directors ensure thorough quality checks before any deliverable (script, voice over, renders, animation, etc.) goes out to you.</p>
-                </div>
-                <input type="radio" class="feedback__selector" name="selector-of-feedback" id="selector-of-feedback1of4">
-                <input type="radio" class="feedback__selector" name="selector-of-feedback" id="selector-of-feedback2of4">
-                <input type="radio" class="feedback__selector" name="selector-of-feedback" id="selector-of-feedback3of4">
-                <input type="radio" class="feedback__selector" name="selector-of-feedback" id="selector-of-feedback4of4">
-            </div>
-        </section>
-        <section class="examples">
-            <div class="examples__wrapper wrapper">
+      <section class="home">
+        <div class="home__wrapper">
+          <h1 class="home__title">Best Animation & Video Production Company</h1>
+          <p class="home__text">
+            According to Forbes, a Video can boost conversion rate by 80%, and
+            grow revenue by average 49%.
+          </p>
+          <img src="/img/home-main.jpg" alt="hello" />
+          <img src="/img/baseline-play-arrow.svg" alt="play" />
+          <form action="#" class="home__form form">
+            <label class="form__label visually-hidden">
+              Enter your name
+              <input type="text" class="form__name" placeholder="First Name" />
+            </label>
 
-                <h2 class="examples__title">Types of Videos</h2>
-                <ul class="examples__list">
-                    <li class="examples__card examples-card">
-                        <img src="/img/animated-explainer-video.jpg" alt="Animated Explainer Video">
-                        <h3 class="examples-card__title">Animated Explainer Video</h3>
-                        <p class="examples-card__text">It`s about time that we throw out the old ways of communicating with our prospects. Be it a document, an image or a presentation….there`s always something amiss. Catch up with the current era! Animated explainer videos not only get your brand message across, but also give the extra little push to convert a maybe to a definite yes! Be it a 2D or a 3D video produced by our explainer video company, the ensemble of attractive visuals, a breathtaking voice over with a mind blowing concept is unbeatable!</p>
-                        <a href="#" class="examples-card__link link">Get a Quote</a>
-                    </li>
-                    <li class="examples__card examples-card">
-                        <img src="/img/product-explainer-video.jpg" alt="Product Explainer Video">
-                        <h3 class="examples-card__title">Product Explainer Video</h3>
-                        <p class="examples-card__text">What influences people to buy one product but not the other? Is it its composition, its features...or maybe its appearance? We as a explainer video company think how you market your product is what determines how well it sells. And a 2D or 3D product explainer video showcasing your product`s features, appearance and composition can build your sales from level zero to infinity. Don`t just advertise for the sake of doing it….be a pro with a unique product explainer video!</p>
-                        <a href="#" class="examples-card__link link">Get a Quote</a>
-                    </li>
-                    <li class="examples__card examples-card">
-                        <img src="/img/whiteboard-explainer-video.jpg" alt="Whiteboard Explainer Video">
-                        <h3 class="examples-card__title">Whiteboard Explainer Video</h3>
-                        <p class="examples-card__text">Keep it simple. Whiteboard explainer videos give your audience a ride back through Nostalgia lane. Remember how your teacher could solve a complex Physics equation on the board and make it look so simple? Well a whiteboard explainer video does the same for your business. Get your brand message across in the most understandable way possible. And enjoy the topping of mouthwatering swiftness and eye-catching visuals! Your next pit stop should definitely be our explainer video company!</p>
-                        <a href="#" class="examples-card__link link">Get a Quote</a>
-                    </li>
-                    <li class="examples__card examples-card">
-                        <img src="/img/live-shoot.jpg" alt="Live Shoot">
-                        <h3 class="examples-card__title">Live Shoot</h3>
-                        <p class="examples-card__text">Impressions are important! And nothing can help you introduce your brand to the world better than a world-class corporate video! Pump up the hype, poke at the curiosity and generate a sense of connection within your masses. How you present yourself to the world matters….and a perfectly shot video is a great step to ensure your brand`s success.</p>
-                        <a href="#" class="examples-card__link link">Get a Quote</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="reviews">
-            <div class="reviews__wrapper wrapper">
-                <h2 class="reviews__title">Love From Our Customer</h2>
-                <ul class="reviews__list">
-                    <li class="reviews__card review-card">
-                        <p class="review-card__text">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consectetur mi nec hendrerit. Integer id est massa.”
-                        </p>
-                        <p class="review-card__name">Vedant Sharma</p>
-                        <p class="review-card__post">Local Guide</p>
-                    </li>
-                </ul>
-                <button class="reviews__arrow"><img src="/img/left-arrow.svg" alt="arrow to left"></button>
-                <button class="reviews__arrow"><img src="/img/right-arrow.svg" alt="arrow to left"></button>
-                <div class="reviews__target target">
-                    <h3 class="target__title">Ready to start your video?</h3>
-                    <a href="#" class="target__link link">Let`s Talk</a>
-                </div>
-            </div>
-        </section>
+            <label class="form__label visually-hidden">
+              Enter your surname
+              <input
+                type="text"
+                class="form__surname"
+                placeholder="Last Name"
+              />
+            </label>
+
+            <label class="form__label visually-hidden">
+              Enter your Email
+              <input
+                type="text"
+                class="form__email"
+                placeholder="Email Address"
+              />
+            </label>
+            <label class="form__label visually-hidden">
+              Enter your phone number
+              <input
+                type="text"
+                class="form__number"
+                placeholder="Phone number"
+              />
+            </label>
+            <label class="form__label visually-hidden">
+              Enter your requirement
+              <textarea
+                name="requirement"
+                cols="30"
+                rows="10"
+                class="form__requirement"
+                placeholder="Requirement"
+              ></textarea>
+            </label>
+            <button type="submit" class="form__submit">
+              Get Info & Pricing
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="clients__wrapper">
+          <h2 class="clients__title">Our Clients</h2>
+          <p class="clients__text">You might have heard of them</p>
+          <ul class="clients__company">
+            <li class="clients__logo">
+              <img src="/img/samsung-logo.png" alt="Samsung logo" />
+            </li>
+            <li class="clients__logo">
+              <img src="/img/viacom-logo.png" alt="Viacom logo" />
+            </li>
+            <li class="clients__logo">
+              <img src="/img/accenture-logo.png" alt="Accenture logo" />
+            </li>
+          </ul>
+          <label class="clients__label visually-hidden">
+            Select image
+            <input
+              type="radio"
+              class="clients__selector"
+              name="selector-of-company"
+            />
+          </label>
+          <label class="clients__label visually-hidden">
+            Select image
+            <input
+              type="radio"
+              class="clients__selector"
+              name="selector-of-company"
+            />
+          </label>
+          <label class="clients__label visually-hidden">
+            Select image
+            <input
+              type="radio"
+              class="clients__selector"
+              name="selector-of-company"
+              id="selector-of-company3of6"
+            />
+          </label>
+          <label class="clients__label visually-hidden">
+            Select image
+            <input
+              type="radio"
+              class="clients__selector"
+              name="selector-of-company"
+              id="selector-of-company4of6"
+            />
+          </label>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio__wrapper">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <p class="portfolio__text">
+            Explore some of the work we`re especially proud of.
+          </p>
+          <div class="portfolio__gallery gallery">
+            <label class="gallery__label visually-hidden">
+              Select image
+              <input
+                type="radio"
+                class="gallery__selector"
+                name="selector-of-portfolio"
+              />
+            </label>
+            <label class="gallery__label visually-hidden">
+              Select image
+
+              <input
+                type="radio"
+                class="gallery__selector"
+                name="selector-of-portfolio"
+              />
+            </label>
+            <label class="gallery__label visually-hidden">
+              Select image
+              <input
+                type="radio"
+                class="gallery__selector"
+                name="selector-of-portfolio"
+              />
+            </label>
+
+            <label class="gallery__label visually-hidden">
+              Select image
+              <input
+                type="radio"
+                class="gallery__selector"
+                name="selector-of-portfolio"
+              />
+            </label>
+
+            <ul class="gallery__img gallery-list">
+              <li><img src="/img/gallery-lucy.jpg" alt="lucy" /></li>
+              <li><img src="/img/gallery-women.jpg" alt="women" /></li>
+              <li><img src="/img/gallery-men.jpg" alt="men" /></li>
+              <li><img src="/img/gallery-speaker.jpg" alt="speaker" /></li>
+              <li><img src="/img/gallery-cityes.jpg" alt="city" /></li>
+              <li><img src="/img/gallery-girls.jpg" alt="girls" /></li>
+            </ul>
+            <a href="#">Show More</a>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description__wrapper">
+          <h2 class="description__title">About Us</h2>
+          <p class="description__text">About Our Video Creation Company!</p>
+          <div class="description__card description-card">
+            <span class="description-card__count">2000<sup>+</sup></span>
+            <h3 class="description-card__title">Clients Served</h3>
+            <p class="description-card__text">
+              We`ve been doing this for years and will be doing it for many
+              more! Our client count has touched the 2k bar and continues to
+              grow with uninterrupted momentum!
+            </p>
+          </div>
+          <label class="description__label visually-hidden">
+            Select card
+            <input type="radio" name="description-card-selector" />
+          </label>
+          <label class="description__label visually-hidden">
+            Select card
+            <input type="radio" name="description-card-selector" />
+          </label>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          feedback
+          <h2 class="feedback__title">Why us?</h2>
+          <p class="feedback__text">
+            Why Choose Mystery Monks As Your Video Production and Animation
+            Company?
+          </p>
+          <div class="feedback__card feedback-card">
+            <img src="/img/finger-like.svg" alt="finger like" />
+            <h3 class="feedback-card__title">Error Free Delivery</h3>
+            <p class="feedback-card__text">
+              Our Creative Directors ensure thorough quality checks before any
+              deliverable (script, voice over, renders, animation, etc.) goes
+              out to you.
+            </p>
+          </div>
+          <label class="feedback__label visually-hidden"> Select card </label>
+          <input
+            type="radio"
+            class="feedback__selector"
+            name="selector-of-feedback"
+            id="selector-of-feedback1of4"
+          />
+          <label class="feedback__label visually-hidden">
+            Select card
+            <input
+              type="radio"
+              class="feedback__selector"
+              name="selector-of-feedback"
+            />
+          </label>
+          <label class="feedback__label visually-hidden">
+            Select card
+            <input
+              type="radio"
+              class="feedback__selector"
+              name="selector-of-feedback"
+              id="selector-of-feedback3of4"
+            />
+          </label>
+          <label class="feedback__label visually-hidden">
+            Select card
+            <input
+              type="radio"
+              class="feedback__selector"
+              name="selector-of-feedback"
+              id="selector-of-feedback4of4"
+            />
+          </label>
+        </div>
+      </section>
+      <section class="examples">
+        <div class="examples__wrapper">
+          <h2 class="examples__title">Types of Videos</h2>
+          <ul class="examples__list">
+            <li class="examples__card examples-card">
+              <img
+                src="/img/animated-explainer-video.jpg"
+                alt="Animated Explainer Video"
+              />
+              <h3 class="examples-card__title">Animated Explainer Video</h3>
+              <p class="examples-card__text">
+                It`s about time that we throw out the old ways of communicating
+                with our prospects. Be it a document, an image or a
+                presentation….there`s always something amiss. Catch up with the
+                current era! Animated explainer videos not only get your brand
+                message across, but also give the extra little push to convert a
+                maybe to a definite yes! Be it a 2D or a 3D video produced by
+                our explainer video company, the ensemble of attractive visuals,
+                a breathtaking voice over with a mind blowing concept is
+                unbeatable!
+              </p>
+              <a href="#" class="examples-card__link">Get a Quote</a>
+            </li>
+            <li class="examples__card examples-card">
+              <img
+                src="/img/product-explainer-video.jpg"
+                alt="Product Explainer Video"
+              />
+              <h3 class="examples-card__title">Product Explainer Video</h3>
+              <p class="examples-card__text">
+                What influences people to buy one product but not the other? Is
+                it its composition, its features...or maybe its appearance? We
+                as a explainer video company think how you market your product
+                is what determines how well it sells. And a 2D or 3D product
+                explainer video showcasing your product`s features, appearance
+                and composition can build your sales from level zero to
+                infinity. Don`t just advertise for the sake of doing it….be a
+                pro with a unique product explainer video!
+              </p>
+              <a href="#" class="examples-card__link">Get a Quote</a>
+            </li>
+            <li class="examples__card examples-card">
+              <img
+                src="/img/whiteboard-explainer-video.jpg"
+                alt="Whiteboard Explainer Video"
+              />
+              <h3 class="examples-card__title">Whiteboard Explainer Video</h3>
+              <p class="examples-card__text">
+                Keep it simple. Whiteboard explainer videos give your audience a
+                ride back through Nostalgia lane. Remember how your teacher
+                could solve a complex Physics equation on the board and make it
+                look so simple? Well a whiteboard explainer video does the same
+                for your business. Get your brand message across in the most
+                understandable way possible. And enjoy the topping of
+                mouthwatering swiftness and eye-catching visuals! Your next pit
+                stop should definitely be our explainer video company!
+              </p>
+              <a href="#" class="examples-card__link">Get a Quote</a>
+            </li>
+            <li class="examples__card examples-card">
+              <img src="/img/live-shoot.jpg" alt="Live Shoot" />
+              <h3 class="examples-card__title">Live Shoot</h3>
+              <p class="examples-card__text">
+                Impressions are important! And nothing can help you introduce
+                your brand to the world better than a world-class corporate
+                video! Pump up the hype, poke at the curiosity and generate a
+                sense of connection within your masses. How you present yourself
+                to the world matters….and a perfectly shot video is a great step
+                to ensure your brand`s success.
+              </p>
+              <a href="#" class="examples-card__link">Get a Quote</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Love From Our Customer</h2>
+          <ul class="reviews__list">
+            <li class="reviews__card review-card">
+              <p class="review-card__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus tempus consectetur mi nec hendrerit. Integer id est
+                massa.”
+              </p>
+              <p class="review-card__name">Vedant Sharma</p>
+              <p class="review-card__post">Local Guide</p>
+            </li>
+          </ul>
+          <button class="reviews__arrow">
+            <img src="/img/left-arrow.svg" alt="arrow to left" />
+          </button>
+          <button class="reviews__arrow">
+            <img src="/img/right-arrow.svg" alt="arrow to left" />
+          </button>
+          <div class="reviews__target target">
+            <h3 class="target__title">Ready to start your video?</h3>
+            <a href="#" class="target__link">Let`s Talk</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper wrapper">
-            <div class="footer__text-block text-block">
-                <h3 class="text-block__title">Company</h3>
-                <ul class="text-block__list">
-                    <li class="text-block__item"><a href="#" class="text-block__link">About us</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Our Work</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Our Blog</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Track Oder</a></li>
-                </ul>
-            </div>
-            <div class="footer__text-block text-block">
-                <h3 class="text-block__title">Industries</h3>
-                <ul class="text-block__list">
-                    <li class="text-block__item"><a href="#" class="text-block__link">Education</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">E-commerce</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Entertainment</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Financial Services</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Healthcare</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Information Technology</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Marketing & Advertising</a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link">Travel</a></li>
-                </ul>
-            </div>
-            <div class="footer__text-block text-block">
-                <h3 class="text-block__title">Phone</h3>
-                <a href="tel:#" class="text-block__link">+91 9643313012</a>
-            </div>
-            <div class="footer__text-block text-block">
-                <h3 class="text-block__title">Email</h3>
-                <a href="mailto:#" class="text-block__link">sales@mysterymonks.com</a>
-            </div>
-            <div class="footer__text-block text-block">
-                <ul class="text-block__list">
-                    <li class="text-block__item"><a href="#" class="text-block__link"><img src="/img/facebook.svg" alt="facebook logo"></a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link"><img src="/img/twitter.svg" alt="twitter logo"></a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link"><img src="/img/linkedin.svg" alt="linkedin logo"></a></li>
-                    <li class="text-block__item"><a href="#" class="text-block__link"><img src="/img/youtube.svg" alt="youtube logo"></a></li>
-                </ul>
-            </div>
-            <p class="footer__copyright">Copyright Mysterymonks © 2023
-                All rights reserved.</p>
+      <div class="footer__wrapper">
+        <div class="footer__company-text-block company-text-block">
+          <h3 class="company-text-block__title">Company</h3>
+          <ul class="company-text-block__list">
+            <li class="company-text-block__item">
+              <a href="#" class="company-text-block__link">About us</a>
+            </li>
+            <li class="text-block__item">
+              <a href="#" class="company-text-block__link">Our Work</a>
+            </li>
+            <li class="text-block__item">
+              <a href="#" class="company-text-block__link">Our Blog</a>
+            </li>
+            <li class="text-block__item">
+              <a href="#" class="company-text-block__link">Track Oder</a>
+            </li>
+          </ul>
         </div>
+        <div class="footer__industries-text-block industries-text-block">
+          <h3 class="industries-text-block__title">Industries</h3>
+          <ul class="industries-text-block__list">
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Education</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">E-commerce</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Entertainment</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Financial Services</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Healthcare</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Information Technology</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Marketing & Advertising</a>
+            </li>
+            <li class="industries-text-block__item">
+              <a href="#" class="industries-text-block__link">Travel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__phone-text-block text-block">
+          <h3 class="phone-text-block__title">Phone</h3>
+          <a href="tel:+919643313012" class="phone-text-block__link"
+            >+91 9643313012</a
+          >
+        </div>
+        <div class="footer__email-text-block email-text-block">
+          <h3 class="email-text-block__title">Email</h3>
+          <a href="mailto:sales@mysterymonks.com" class="email-text-block__link"
+            >sales@mysterymonks.com</a
+          >
+        </div>
+        <div class="footer__socials-text-block socials-text-block">
+          <ul class="socials-text-block__list">
+            <li class="socials-text-block__item">
+              <a href="#" class="socials-text-block__link"
+                ><img src="/img/facebook.svg" alt="facebook logo"
+              /></a>
+            </li>
+            <li class="socials-text-block__item">
+              <a href="#" class="socials-text-block__link"
+                ><img src="/img/twitter.svg" alt="twitter logo"
+              /></a>
+            </li>
+            <li class="socials-text-block__item">
+              <a href="#" class="socials-text-block__link"
+                ><img src="/img/linkedin.svg" alt="linkedin logo"
+              /></a>
+            </li>
+            <li class="socials-text-block__item">
+              <a href="#" class="socials-text-block__link"
+                ><img src="/img/youtube.svg" alt="youtube logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          Copyright Mysterymonks © 2023 All rights reserved.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
