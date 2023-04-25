@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Mystery Monks</title>
   </head>
   <body>
@@ -32,18 +33,24 @@
     <main>
       <section class="home">
         <div class="home__wrapper">
-          <h1 class="home__title">Best Animation & Video Production Company</h1>
+          <h1 class="home__title">
+            Best <span class="home__title_highlight">Animation</span> &
+            <span class="home__title_highlight">Video</span> Production Company
+          </h1>
           <p class="home__text">
             According to Forbes, a Video can boost conversion rate by 80%, and
             grow revenue by average 49%.
           </p>
-          <img src="/img/home-main.jpg" alt="hello" class="home__img" />
-          <img
-            src="/img/baseline-play-arrow.svg"
-            alt="play"
-            class="home__play-img"
-          />
+          <div class="home__img home-img">
+            <img src="/img/home-main.jpg" alt="hello" class="home-img__img" />
+            <img
+              src="/img/baseline-play-arrow.svg"
+              alt="play"
+              class="home-img__play-img"
+            />
+          </div>
           <form action="#" class="home__form form">
+            <h3 class="form__title">Speak to our Video Experts</h3>
             <label class="form__label">
               <span class="visually-hidden">Enter your name</span>
 
@@ -121,42 +128,43 @@
               />
             </li>
           </ul>
-          <label class="clients__label">
-            <span class="visually-hidden"> Select image </span>
-
-            <input
-              type="radio"
-              class="clients__selector"
-              name="selector-of-company"
-            />
-          </label>
-          <label class="clients__label">
-            <span class="visually-hidden"> Select image</span>
-
-            <input
-              type="radio"
-              class="clients__selector"
-              name="selector-of-company"
-            />
-          </label>
-          <label class="clients__label">
-            <span class="visually-hidden"> Select image</span>
-
-            <input
-              type="radio"
-              class="clients__selector"
-              name="selector-of-company"
-            />
-          </label>
-          <label class="clients__label">
-            <span class="visually-hidden"> Select image</span>
-
-            <input
-              type="radio"
-              class="clients__selector"
-              name="selector-of-company"
-            />
-          </label>
+          <div class="clients__selectors">
+            <label class="clients__label">
+              <span class="visually-hidden"> Select image </span>
+              <input
+                type="radio"
+                class="clients__selector"
+                name="selector-of-company"
+              />
+            </label>
+            <label class="clients__label">
+              <span class="visually-hidden"> Select image</span>
+  
+              <input
+                type="radio"
+                class="clients__selector"
+                name="selector-of-company"
+              />
+            </label>
+            <label class="clients__label">
+              <span class="visually-hidden"> Select image</span>
+  
+              <input
+                type="radio"
+                class="clients__selector"
+                name="selector-of-company"
+              />
+            </label>
+            <label class="clients__label">
+              <span class="visually-hidden"> Select image</span>
+  
+              <input
+                type="radio"
+                class="clients__selector"
+                name="selector-of-company"
+              />
+            </label>
+          </div>
         </div>
       </section>
       <section class="portfolio">
@@ -500,13 +508,13 @@
             </li>
           </ul>
         </div>
-        <div class="footer__phone phone">
-          <h3 class="phone__title">Phone</h3>
-          <a href="tel:+919643313012" class="phone__link"> +91 9643313012 </a>
+        <div class="footer__contact contact">
+          <h3 class="contact__title">Phone</h3>
+          <a href="tel:+919643313012" class="contact__link"> +91 9643313012 </a>
         </div>
-        <div class="footer__email email">
-          <h3 class="email__title">Email</h3>
-          <a href="mailto:sales@mysterymonks.com" class="email__link">
+        <div class="footer__contact contact">
+          <h3 class="contact__title">Email</h3>
+          <a href="mailto:sales@mysterymonks.com" class="contact__link">
             sales@mysterymonks.com
           </a>
         </div>

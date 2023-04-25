@@ -1,0 +1,5 @@
+@mixin wrapper($display:flex, $maxwidth:390px){
+    display: $display;
+    max-width: $maxwidth;
+    margin: 0 auto;
+}

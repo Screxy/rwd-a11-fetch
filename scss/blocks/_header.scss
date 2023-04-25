@@ -1,0 +1,16 @@
+@use '../utils/mixin.scss' as *;
+.header {
+    margin-top: 2.7rem;
+}
+.header__wrapper {
+    @include wrapper();
+    padding: 0 1.5rem;
+    justify-content: space-between;
+}
+// .header__link {
+    
+// }
+// .header__logo {
+// }
+// .header__burger {
+// }

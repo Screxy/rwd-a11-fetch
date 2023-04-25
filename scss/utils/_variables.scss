@@ -1,0 +1,13 @@
+$colors: (
+  "secondDescColor": #FFFFFF,
+  "TitleColor": #1A1A1A,
+  "primaryTitleColor": #EF5537,
+  "subtitleColor": #54387F,
+  "primaryDescColor": #6A6A6A,
+  'secondTitleColor':#2A2A2A,
+  'footerTextColor':#F6F6F6,    
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}

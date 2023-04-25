@@ -1,0 +1,28 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+
+.home {
+  margin-top: 3.5rem;
+}
+.home__wrapper {
+  @include wrapper();
+  flex-direction: column;
+}
+.home__title {
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+}
+.home__title_highlight {
+  color: color(primaryTitleColor);
+}
+.home__text {
+  margin-top: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+// .home__img {
+// }
+// .home__form{
+
+// }

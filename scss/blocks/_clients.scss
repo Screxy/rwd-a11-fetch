@@ -1,0 +1,43 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+  
+.clients {
+    margin-top: 4rem;
+}
+.clients__wrapper{
+    @include wrapper();
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.clients__title {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: color(primaryTitleColor);
+    text-align: center;
+}
+.clients__text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: color(subtitleColor);
+    text-align: center;
+}
+.clients__company {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+// .clients__logo {
+// }
+// .clients__img {
+// }
+.clients__label {
+    margin-left: 1rem;
+}
+.clients__label:nth-child(1){
+    margin: 0;
+}
+.clients__selectors {
+    margin: 1rem auto 0;
+    
+    width: max-content;
+}
