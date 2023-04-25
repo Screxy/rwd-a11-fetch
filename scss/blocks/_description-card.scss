@@ -1,0 +1,25 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+
+.description-card {
+  display: flex;
+  flex-direction: column;
+}
+.description-card__count {
+  margin: 2rem auto;
+
+  font-weight: 600;
+  font-size: 8rem;
+  line-height: 10.9rem;
+  color: color(subtitleColor);
+  text-align: center;
+}
+.description-card__title {
+  @include secondTitle();
+}
+.description-card__text {
+  margin-top: 2rem;
+  @include desc();
+}
+// .description__label {
+// }

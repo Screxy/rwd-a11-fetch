@@ -1,0 +1,29 @@
+@use '../utils/variables' as *;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 4rem;
+}
+.gallery__label {
+}
+.gallery__selector {
+}
+.gallery__list {
+    margin-top: 4rem;
+}
+.gallery__link {
+  margin: 4rem auto 0;
+  padding: 1rem 4rem;
+
+  border: 0.1rem solid #ef5537;
+  border-radius: 20rem;
+
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  color: color(primaryTitleColor);
+
+  text-decoration: none;
+  
+}
