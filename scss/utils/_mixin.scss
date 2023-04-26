@@ -33,7 +33,7 @@
   line-height: 2.5rem;
   color: color(primaryDescColor);
 }
-@mixin linkBtn(){
+@mixin linkBtn() {
   display: inline-block;
   padding: 1rem;
   margin-top: 2.5rem;
@@ -44,4 +44,16 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7rem;
+}
+@mixin footerTitle() {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: color(secondDescColor);
+}
+@mixin footerText() {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: color(footerTextColor);
 }

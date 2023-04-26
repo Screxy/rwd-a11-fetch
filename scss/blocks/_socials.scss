@@ -1,12 +1,19 @@
-.socials {
+@use "../utils/mixin" as *;
+
+// .socials {
+// }
+.socials__title {
+  @include footerTitle();
+  margin-top: 2rem;
 }
 .socials__list {
+  display: flex;
+  column-gap: 2rem;
+  margin-top: 1.5rem;
 }
-.socials__item {
-}
-.socials__link {
-}
-.visually-hidden {
-}
-.socials__icon {
-}
+// .socials__item {
+// }
+// .socials__link {
+// }
+// .socials__icon {
+// }

@@ -1,5 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,7 +75,15 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   list-style: none;
 }
 
-article, aside, figure, footer, header, nav, section, details, summary {
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
   display: block;
 }
 
@@ -50,7 +123,8 @@ ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -74,7 +148,8 @@ del {
   text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
   border-bottom: 1px dotted #000;
   cursor: help;
 }
@@ -104,7 +179,8 @@ hr {
   padding: 0;
 }
 
-input, select {
+input,
+select {
   vertical-align: middle;
 }
 
@@ -131,7 +207,9 @@ input[type=checkbox] {
   vertical-align: text-bottom;
 }
 
-select, input, textarea {
+select,
+input,
+textarea {
   font: 99% sans-serif;
 }
 
@@ -148,12 +226,14 @@ strong {
   font-weight: bold;
 }
 
-td, td img {
+td,
+td img {
   vertical-align: top;
 }
 
 /* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -168,7 +248,10 @@ sub {
 }
 
 /* standardize any monospaced elements */
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, sans-serif;
 }
 
@@ -183,7 +266,10 @@ button {
 }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   margin: 0;
 }
 
@@ -204,7 +290,8 @@ input[type=button] {
 .ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
 */
 /* let's clear some floats */
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   display: block;
   height: 0;
@@ -290,6 +377,37 @@ html {
   margin: 1rem auto 0;
   width: -moz-max-content;
   width: max-content;
+}
+
+.company__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+}
+
+.company__list {
+  margin-top: 2rem;
+}
+
+.company__link {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+.contact {
+  margin: 2rem 0 2.8rem;
+}
+
+.contact__email {
+  margin-top: 2.5rem;
+}
+
+.contact__socials {
+  margin-top: 2rem;
 }
 
 .description-card {
@@ -428,7 +546,7 @@ html {
 }
 
 .feedback-card {
-  border: 1.5px solid #EBEBEB;
+  border: 1.5px solid #ebebeb;
   border-radius: 7px;
   padding: 2rem;
   padding-bottom: 4rem;
@@ -498,6 +616,39 @@ html {
   max-width: 390px;
   margin: 0 auto;
   flex-direction: column;
+}
+
+.footer__company {
+  margin-top: 2rem;
+}
+
+.footer__industries {
+  margin-top: 3rem;
+}
+
+.footer__contact {
+  margin-top: 5rem;
+}
+
+.footer__socials {
+  margin-top: 2rem;
+}
+
+.footer__copyright {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f6f6f6;
+  margin-top: 2.5rem;
+}
+
+.footer__rights {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f6f6f6;
+  line-height: 2rem;
+  color: #ffffff;
 }
 
 .form {
@@ -606,6 +757,25 @@ html {
   line-height: 3.2rem;
 }
 
+.industries__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+}
+
+.industries__list {
+  margin-top: 2.5rem;
+}
+
+.industries__link {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
 .portfolio {
   margin-top: 4rem;
 }
@@ -700,6 +870,21 @@ html {
   justify-content: center;
 }
 
+.socials__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.socials__list {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-top: 1.5rem;
+}
+
 .target {
   display: flex;
   flex-direction: column;
@@ -738,4 +923,40 @@ html {
   position: absolute;
   top: 50%;
   left: calc(50% - 50px);
+}
+
+.tel__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+}
+
+.tel__link {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f6f6f6;
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-decoration: none;
+}
+
+.email__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+}
+
+.email__link {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f6f6f6;
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

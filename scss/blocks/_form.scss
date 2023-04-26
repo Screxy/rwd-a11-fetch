@@ -18,25 +18,26 @@
 }
 .form__label {
   width: 100%;
-  & > input, & > textarea{
+  & > input,
+  & > textarea {
     width: 100%;
     margin-top: 2rem;
   }
-  &:nth-child(-n+3){
+  &:nth-child(-n + 3) {
     width: 50%;
   }
 }
 
-.form__name {
-}
-.form__surname {
-}
-.form__email {
-}
-.form__number {
-}
-.form__requirement {
-}
+// .form__name {
+// }
+// .form__surname {
+// }
+// .form__email {
+// }
+// .form__number {
+// }
+// .form__requirement {
+// }
 .form__submit {
   margin-top: 2rem;
   margin-right: auto;

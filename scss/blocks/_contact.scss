@@ -1,6 +1,13 @@
+@use "../utils/mixin" as *;
+
 .contact {
+  margin: 2rem 0 2.8rem;
 }
-.contact__title {
+// .contact__tel {
+// }
+.contact__email {
+  margin-top: 2.5rem;
 }
-.contact__link {
+.contact__socials {
+  margin-top: 2rem;
 }

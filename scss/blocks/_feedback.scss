@@ -2,25 +2,25 @@
 @use "../utils/variables" as *;
 
 .feedback {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 .feedback__wrapper {
-    @include wrapper();
-    flex-direction: column;
+  @include wrapper();
+  flex-direction: column;
 }
 .feedback__title {
-    @include title();
+  @include title();
 }
 .feedback__text {
-    @include subTitle();
-    margin-top: 0.5rem;
+  @include subTitle();
+  margin-top: 0.5rem;
 }
 .feedback__card {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 .feedback__selectors {
-    margin: 3rem auto 0;
-    display: flex;
+  margin: 3rem auto 0;
+  display: flex;
 }
 // .feedback__label {
 // }

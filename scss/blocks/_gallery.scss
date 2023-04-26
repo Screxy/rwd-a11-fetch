@@ -1,16 +1,16 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 .gallery {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 4rem;
 }
-.gallery__label {
-}
-.gallery__selector {
-}
+// .gallery__label {
+// }
+// .gallery__selector {
+// }
 .gallery__list {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 .gallery__link {
   margin: 4rem auto 0;
@@ -25,5 +25,4 @@
   color: color(primaryTitleColor);
 
   text-decoration: none;
-  
 }

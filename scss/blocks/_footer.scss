@@ -2,19 +2,30 @@
 @use "../utils/variables" as *;
 
 .footer {
-    background-color: color(primaryDescColor);
+  background-color: color(primaryDescColor);
 }
 .footer__wrapper {
   @include wrapper();
   flex-direction: column;
 }
 .footer__company {
+  margin-top: 2rem;
 }
 .footer__industries {
+  margin-top: 3rem;
 }
 .footer__contact {
+  margin-top: 5rem;
 }
 .footer__socials {
+  margin-top: 2rem;
 }
 .footer__copyright {
+  @include footerText();
+  margin-top: 2.5rem;
+}
+.footer__rights {
+  @include footerText();
+  line-height: 2rem;
+  color: color(secondDescColor);
 }

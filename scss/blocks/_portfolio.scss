@@ -1,22 +1,21 @@
-@use '../utils/mixin' as *;
-@use '../utils/variables' as *;
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
 
-.portfolio{
-    margin-top: 4rem;
+.portfolio {
+  margin-top: 4rem;
 }
 
 .portfolio__wrapper {
-    @include wrapper();
-    flex-direction: column;
-    justify-content: center;        
+  @include wrapper();
+  flex-direction: column;
+  justify-content: center;
 }
 .portfolio__title {
-    @include title();
+  @include title();
 }
 .portfolio__text {
-    @include subTitle();
-    margin-top: 0.5rem;
-
+  @include subTitle();
+  margin-top: 0.5rem;
 }
-.portfolio__gallery {
-}
+// .portfolio__gallery {
+// }

@@ -1,39 +1,38 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
-  
+
 .clients {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
-.clients__wrapper{
-    @include wrapper();
-    flex-direction: column;
-    flex-wrap: wrap;
+.clients__wrapper {
+  @include wrapper();
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .clients__title {
-    @include title();
+  @include title();
 }
 .clients__text {
-    @include subTitle();
-    margin-top: 0.5rem;
-
+  @include subTitle();
+  margin-top: 0.5rem;
 }
 .clients__company {
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-around;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around;
 }
 // .clients__logo {
 // }
 // .clients__img {
 // }
 .clients__label {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
-.clients__label:nth-child(1){
-    margin: 0;
+.clients__label:nth-child(1) {
+  margin: 0;
 }
 .clients__selectors {
-    margin: 1rem auto 0;
-    
-    width: max-content;
+  margin: 1rem auto 0;
+
+  width: max-content;
 }

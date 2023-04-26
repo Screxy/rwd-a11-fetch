@@ -1,15 +1,15 @@
 .gallery-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 1.5rem;
-    grid-column-gap: 2rem;
-    &>li{
-        width: max-content;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2rem;
+  & > li {
+    width: max-content;
+  }
 }
-.gallery-list__item {
-}
-.gallery-list__img {
-}
-.gallery__link {
-}
+// .gallery-list__item {
+// }
+// .gallery-list__img {
+// }
+// .gallery__link {
+// }

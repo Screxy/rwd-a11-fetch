@@ -1,10 +1,16 @@
-.company {
-}
+@use "../utils/mixin" as *;
+
+// .company {
+// }
 .company__title {
+  @include footerTitle();
 }
 .company__list {
+  margin-top: 2rem;
 }
-.company__item {
-}
+// .company__item {
+// }
 .company__link {
+  @include footerText();
+  text-decoration: none;
 }
