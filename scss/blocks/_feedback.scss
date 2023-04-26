@@ -1,27 +1,28 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
 
-// .feedback {
-// }
-// .feedback__wrapper {
-// }
-// .feedback__title {
-// }
-// .feedback__text {
-// }
-// .feedback__card {
-// }
-// .feedback-card {
-// }
-// .feedback-card__img {
-// }
-// .feedback-card__title {
-// }
-// .feedback-card__text {
-// }
+.feedback {
+    margin-top: 4rem;
+}
+.feedback__wrapper {
+    @include wrapper();
+    flex-direction: column;
+}
+.feedback__title {
+    @include title();
+}
+.feedback__text {
+    @include subTitle();
+    margin-top: 0.5rem;
+}
+.feedback__card {
+    margin-top: 5rem;
+}
+.feedback__selectors {
+    margin: 3rem auto 0;
+    display: flex;
+}
 // .feedback__label {
-// }
-// .visually-hidden {
 // }
 // .feedback__selector {
 // }

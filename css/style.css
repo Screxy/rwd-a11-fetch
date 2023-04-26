@@ -357,7 +357,147 @@ html {
 
 .description__selectors {
   display: flex;
+  margin-top: 3rem;
   justify-content: center;
+}
+
+.examples-card {
+  padding-bottom: 0.3rem;
+}
+
+.examples-card__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #2a2a2a;
+  line-height: 2.7rem;
+  margin-top: 4rem;
+  letter-spacing: -0.1296rem;
+}
+
+.examples-card__text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #6a6a6a;
+  margin-top: 1.2rem;
+  line-height: 2.7rem;
+  letter-spacing: -0.034rem;
+}
+
+.examples-card__link {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  background: #ef5537;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+.examples {
+  margin-top: 4rem;
+  background-color: #f5f5f5;
+}
+
+.examples__wrapper {
+  display: flex;
+  max-width: 390px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.examples__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: #ef5537;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.examples__list {
+  margin-top: 4rem;
+}
+
+.examples__card:nth-child(n+2) {
+  margin-top: 5rem;
+}
+
+.feedback-card {
+  border: 1.5px solid #EBEBEB;
+  border-radius: 7px;
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+
+.feedback-card__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #2a2a2a;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.feedback-card__text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #6a6a6a;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.feedback {
+  margin-top: 4rem;
+}
+
+.feedback__wrapper {
+  display: flex;
+  max-width: 390px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.feedback__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: #ef5537;
+  text-align: center;
+}
+
+.feedback__text {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #54387f;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.feedback__card {
+  margin-top: 5rem;
+}
+
+.feedback__selectors {
+  margin: 3rem auto 0;
+  display: flex;
+}
+
+.footer {
+  background-color: #6a6a6a;
+}
+
+.footer__wrapper {
+  display: flex;
+  max-width: 390px;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .form {
@@ -493,6 +633,101 @@ html {
   color: #54387f;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.review-card__text {
+  padding: 3rem;
+  background: #54387f;
+  box-shadow: 40px 60px 60px -20px rgba(0, 0, 0, 0.176);
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: #ffffff;
+}
+
+.review-card__name {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  color: #000000;
+}
+
+.review-card__post {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-align: center;
+  letter-spacing: -0.016rem;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.reviews {
+  margin-top: 4rem;
+  background-image: url(/img/review-background.png);
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 14rem;
+}
+
+.reviews__wrapper {
+  display: flex;
+  max-width: 390px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.reviews__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: #ef5537;
+  text-align: center;
+}
+
+.reviews__list {
+  margin-top: 4rem;
+}
+
+.review__arrows {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+}
+
+.target__title {
+  margin-top: 7.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  line-height: 4.2rem;
+  text-align: center;
+}
+
+.target__link {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  background: #ef5537;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  margin: 1.2rem auto 0;
 }
 
 .home-img {

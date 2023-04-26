@@ -16,10 +16,13 @@
 }
 .description-card__title {
   @include secondTitle();
+  text-align: center;
 }
 .description-card__text {
   margin-top: 2rem;
   @include desc();
+  text-align: center;
+
 }
 // .description__label {
 // }

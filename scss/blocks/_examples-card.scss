@@ -1,0 +1,22 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+.examples-card {
+  padding-bottom: 0.3rem;
+}
+// .examples-card__img {
+// }
+.examples-card__title {
+  @include secondTitle();
+  line-height: 2.7rem;
+  margin-top: 4rem;
+  letter-spacing: -0.1296rem;
+}
+.examples-card__text {
+  @include desc();
+  margin-top: 1.2rem;
+  line-height: 2.7rem;
+  letter-spacing: -0.034rem;
+}
+.examples-card__link {
+  @include linkBtn();
+}

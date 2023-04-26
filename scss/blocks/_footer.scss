@@ -1,0 +1,20 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+
+.footer {
+    background-color: color(primaryDescColor);
+}
+.footer__wrapper {
+  @include wrapper();
+  flex-direction: column;
+}
+.footer__company {
+}
+.footer__industries {
+}
+.footer__contact {
+}
+.footer__socials {
+}
+.footer__copyright {
+}

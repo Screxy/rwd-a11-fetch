@@ -1,0 +1,33 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+
+.reviews {
+  margin-top: 4rem;
+  background-image: url(/img/review-background.png);
+  background-position: bottom;  
+  background-size: cover;
+  padding-bottom: 14rem;
+}
+.reviews__wrapper {
+  @include wrapper();
+  flex-direction: column;
+}
+.reviews__title {
+  @include title();
+}
+.reviews__list {
+  margin-top: 4rem;
+}
+// .reviews__card {
+// }
+.review__arrows {
+    margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+// .reviews__arrow {
+// }
+// .reviews__img {
+// }
+// .reviews__target {
+// }

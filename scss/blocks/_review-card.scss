@@ -1,0 +1,36 @@
+@use "../utils/variables" as *;
+
+// .review-card {
+// }
+.review-card__text {
+  padding: 3rem;
+  background: #54387f;
+  box-shadow: 40px 60px 60px -20px rgba(0, 0, 0, 0.176);
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: color(secondDescColor);
+}
+.review-card__name {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+
+  color: #000000;
+}
+.review-card__post {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-align: center;
+  letter-spacing: -0.016rem;
+
+  color: #000000;
+
+  opacity: 0.6;
+}
