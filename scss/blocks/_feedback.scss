@@ -10,6 +10,7 @@
 }
 .feedback__title {
   @include title();
+  margin-top: 4rem;
 }
 .feedback__text {
   @include subTitle();

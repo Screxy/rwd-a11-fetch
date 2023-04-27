@@ -1,16 +1,38 @@
 @use "../utils/variables" as *;
+@use "../utils/mixin" as *;
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   margin-top: 4rem;
+  flex-direction: column;
+  justify-content: center;
 }
-// .gallery__label {
-// }
-// .gallery__selector {
-// }
+.gallery__label > span {
+  @include footerText();
+  color: color(primaryDescColor);
+  @include media(min, xl) {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+.gallery__selectors {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+.gallery__selector:checked + span {
+  color: color(subtitleColor);
+
+  border-bottom: 1.5px solid color(subtitleColor);
+}
+.gallery__selector {
+  display: none;
+}
 .gallery__list {
   margin-top: 4rem;
+  @include media(min, xl) {
+    margin-top: 4.5rem;
+  }
 }
 .gallery__link {
   margin: 4rem auto 0;

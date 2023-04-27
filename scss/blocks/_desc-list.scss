@@ -1,11 +1,22 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
 
-.description-card {
+.desc-list{
+  display: flex;
+  gap: 11rem;
+}
+
+.desc-list__item{
   display: flex;
   flex-direction: column;
 }
-.description-card__count {
+.desc-list__item:nth-child(n+2){
+  display: none;
+  @include media(min,xl){
+    display: flex;
+  }
+}
+.desc-list__count {
   margin: 2rem auto;
 
   font-weight: 600;
@@ -14,11 +25,12 @@
   color: color(subtitleColor);
   text-align: center;
 }
-.description-card__title {
+.desc-list__title {
   @include secondTitle();
   text-align: center;
+  line-height: 2.4rem;
 }
-.description-card__text {
+.desc-list__text {
   margin-top: 2rem;
   @include desc();
   text-align: center;

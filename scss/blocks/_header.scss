@@ -1,6 +1,9 @@
 @use "../utils/mixin.scss" as *;
 .header {
   margin-top: 2.7rem;
+  @media (min-width: 1200px){
+    margin-top: 2rem;
+  }
 }
 .header__wrapper {
   @include wrapper();
@@ -10,7 +13,15 @@
 // .header__link {
 
 // }
-// .header__logo {
-// }
-// .header__burger {
-// }
+.header__logo {
+  width: 100%;
+}
+.header__nav {
+  position: relative;
+  z-index: 1;
+}
+.header__burger {
+  @media (min-width:1200px){
+    display: none;
+  } 
+}

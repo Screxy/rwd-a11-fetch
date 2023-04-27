@@ -7,10 +7,16 @@
 .home__wrapper {
   @include wrapper();
   flex-direction: column;
+  position: relative;
 }
 .home__title {
   font-size: 3.4rem;
   line-height: 4.6rem;
+  @media (min-width: 1200px) {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    text-align: center;
+  }
 }
 .home__title_highlight {
   color: color(primaryTitleColor);
@@ -20,9 +26,20 @@
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 3.2rem;
+  @media (min-width: 1200px) {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+  }
 }
 // .home__img {
 // }
-// .home__form{
-
-// }
+.home__form{
+@media (min-width:1200px){
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+  width: 42rem;
+}
+}

@@ -3,10 +3,12 @@
 @use "./utils/fonts";
 @use "./utils/generals";
 @use "./utils/variables";
+@use "./blocks/header";
+@use "./blocks/home";
 @use "./blocks/clients";
 @use "./blocks/company";
 @use "./blocks/contact";
-@use "./blocks/description-card";
+@use "./blocks/desc-list";
 @use "./blocks/description";
 @use "./blocks/examples-card";
 @use "./blocks/examples";
@@ -16,9 +18,7 @@
 @use "./blocks/form";
 @use "./blocks/gallery-list";
 @use "./blocks/gallery";
-@use "./blocks/header";
 @use "./blocks/logo";
-@use "./blocks/home";
 @use "./blocks/industries";
 @use "./blocks/portfolio";
 @use "./blocks/review-card";
@@ -28,3 +28,4 @@
 @use "./blocks/home-img";
 @use "./blocks/tel";
 @use "./blocks/email";
+@use './blocks/nav-list';

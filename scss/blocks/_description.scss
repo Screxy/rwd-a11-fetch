@@ -3,6 +3,10 @@
 
 .description {
   margin-top: 4rem;
+  @include media(min,xl){
+    margin-top: 6rem;
+  }
+  padding-bottom: 3rem;
 }
 .description__wrapper {
   @include wrapper();
@@ -15,13 +19,19 @@
   @include subTitle();
   margin-top: 1.8rem;
 }
-.description__card {
+.description__list {
   margin-top: 5rem;
+  @include media(min, xl){
+    margin-top: 7.6rem;
+  }
 }
 .description__selectors {
   display: flex;
   margin-top: 3rem;
   justify-content: center;
+  @include media(min,xl){
+    display: none;
+  }
 }
 // .description__selector {
 // }

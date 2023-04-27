@@ -10,24 +10,69 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a href="#" class="header__link"
-          ><img
-            src="/img/main-logo.png"
-            alt="Main logo"
-            class="header__logo logo"
-        /></a>
-        <svg
-          class="header__burger"
-          width="20"
-          height="27"
-          viewBox="0 0 20 27"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="5" width="20" height="4" rx="2" fill="#EF5537" />
-          <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" />
-          <rect y="23" width="20" height="4" rx="2" fill="#EF5537" />
-        </svg>
+        <a href="#" class="header__link">
+          <picture>
+            <source
+              class="header__logo"
+              srcset="/img/main-logo-Dekstop.png"
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              class="header__logo"
+              srcset="/img/main-logo.png"
+              media="(min-width: 390px)"
+              type="image/png"
+            />
+            <img src="/img/main-logo-Dekstop.png" alt="logo" />
+          </picture>
+        </a>
+        <nav class="header__nav">
+          <svg
+            class="header__burger"
+            width="20"
+            height="27"
+            viewBox="0 0 20 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="5" width="20" height="4" rx="2" fill="#EF5537" />
+            <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" />
+            <rect y="23" width="20" height="4" rx="2" fill="#EF5537" />
+          </svg>
+          <ul class="header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">Home</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">Our Client</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">Our Portfolio</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">About Us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">Why us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">Types of videos</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link">Reviews</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list_link"
+                ><img
+                  src="/img/Lightning.svg"
+                  alt="Lightning icon"
+                  class="nav-list__img"
+                />Get a Quote</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -42,12 +87,26 @@
             grow revenue by average 49%.
           </p>
           <div class="home__img home-img">
-            <img src="/img/home-main.jpg" alt="hello" class="home-img__img" />
-            <img
+            <picture>
+              <source
+                class="header__logo"
+                srcset="/img/home-main-desktop.jpg"
+                media="(min-width: 1200px)"
+                type="image/png"
+              />
+              <source
+                class="header__logo"
+                srcset="/img/home-main.jpg"
+                media="(min-width: 390px)"
+                type="image/png"
+              />
+              <img src="/img/home-main-desktop.jpg" alt="logo" />
+            </picture>
+            <!-- <img
               src="/img/baseline-play-arrow.svg"
               alt="play"
               class="home-img__play-img"
-            />
+            /> -->
           </div>
           <form action="#" class="home__form form">
             <h3 class="form__title">Speak to our Video Experts</h3>
@@ -107,30 +166,131 @@
           <p class="clients__text">You might have heard of them</p>
           <ul class="clients__company">
             <li class="clients__logo">
+              <picture>
+                <source
+                  class="clients__img"
+                  srcset="/img/samsung-logo-desktop.png"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  class="clients__img"
+                  srcset="/img/samsung-logo.png"
+                  media="(min-width: 390px)"
+                  type="image/png"
+                />
+                <img
+                  src="/img/samsung-logo.png"
+                  alt="logo"
+                  class="clients__img"
+                />
+              </picture>
+            </li>
+            <li class="clients__logo">
+              <picture>
+                <source
+                  class="clients__img"
+                  srcset="/img/viacom-logo-desktop.png"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  class="clients__img"
+                  srcset="/img/viacom-logo.png"
+                  media="(min-width: 390px)"
+                  type="image/png"
+                />
+                <img
+                  src="/img/viacom-logo.png"
+                  alt="logo"
+                  class="clients__img"
+                />
+              </picture>
+            </li>
+            <li class="clients__logo">
+              <picture>
+                <source
+                  class="clients__img"
+                  srcset="/img/accenture-logo-desktop.png"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  class="clients__img"
+                  srcset="/img/accenture-logo.png"
+                  media="(min-width: 390px)"
+                  type="image/png"
+                />
+                <img
+                  src="/img/accenture-logo.png"
+                  alt="logo"
+                  class="clients__img"
+                />
+              </picture>
+            </li>
+            <li class="clients__logo">
               <img
                 class="clients__img"
-                src="/img/samsung-logo.png"
-                alt="Samsung logo"
+                src="/img/honeywell-logo.png"
+                alt="honeywell logo"
               />
             </li>
             <li class="clients__logo">
               <img
                 class="clients__img"
-                src="/img/viacom-logo.png"
-                alt="Viacom logo"
+                src="/img/bajaj-logo.png"
+                alt="Bajaj logo"
               />
             </li>
             <li class="clients__logo">
               <img
                 class="clients__img"
-                src="/img/accenture-logo.png"
-                alt="Accenture logo"
+                src="/img/tata-logo.png"
+                alt="Tata logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/affle-logo.png"
+                alt="Affle logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/bain-logo.png"
+                alt="Bain logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/tibco-logo.png"
+                alt="Tibco logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/tally-logo.png"
+                alt="Tally logo"
               />
             </li>
           </ul>
           <div class="clients__selectors">
-            <label class="clients__label">
+            <input
+              type="radio"
+              class="clients__selector"
+              name="selector-of-company"
+              id="selector-of-company1of4"
+            />
+            <label class="clients__label" for="selector-of-company1of4">
               <span class="visually-hidden"> Select image </span>
+            </label>
+            <label class="clients__label">
+              <span class="visually-hidden"> Select image</span>
+
               <input
                 type="radio"
                 class="clients__selector"
@@ -139,7 +299,7 @@
             </label>
             <label class="clients__label">
               <span class="visually-hidden"> Select image</span>
-  
+
               <input
                 type="radio"
                 class="clients__selector"
@@ -148,16 +308,7 @@
             </label>
             <label class="clients__label">
               <span class="visually-hidden"> Select image</span>
-  
-              <input
-                type="radio"
-                class="clients__selector"
-                name="selector-of-company"
-              />
-            </label>
-            <label class="clients__label">
-              <span class="visually-hidden"> Select image</span>
-  
+
               <input
                 type="radio"
                 class="clients__selector"
@@ -174,83 +325,167 @@
             Explore some of the work we`re especially proud of.
           </p>
           <div class="portfolio__gallery gallery">
-            <label class="gallery__label">
-              <span class="visually-hidden"> Select image</span>
-              <input
-                type="radio"
-                class="gallery__selector"
-                name="selector-of-portfolio"
-              />
-            </label>
-            <label class="gallery__label">
-              <span class="visually-hidden"> Select image</span>
-
-              <input
-                type="radio"
-                class="gallery__selector"
-                name="selector-of-portfolio"
-              />
-            </label>
-            <label class="gallery__label">
-              <span class="visually-hidden"> Select image</span>
-              <input
-                type="radio"
-                class="gallery__selector"
-                name="selector-of-portfolio"
-              />
-            </label>
-
-            <label class="gallery__label">
-              <span class="visually-hidden"> Select image</span>
-              <input
-                type="radio"
-                class="gallery__selector"
-                name="selector-of-portfolio"
-              />
-            </label>
-
+            <div class="gallery__selectors">
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                  checked
+                />
+                <span> All </span>
+              </label>
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                />
+                <span> Finance</span>
+              </label>
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                />
+                <span> Technology</span>
+              </label>
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                />
+                <span> Education</span>
+              </label>
+            </div>
             <ul class="gallery__list gallery-list">
               <li class="gallery-list__item">
-                <img
-                  class="gallery-list__img"
-                  src="/img/gallery-lucy.jpg"
-                  alt="lucy"
-                />
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-lucy-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-lucy.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-lucy.jpg"
+                    alt="lucy"
+                  />
+                </picture>
               </li>
               <li class="gallery-list__item">
-                <img
-                  class="gallery-list__img"
-                  src="/img/gallery-women.jpg"
-                  alt="women"
-                />
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-women-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-women.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-women.jpg"
+                    alt="women"
+                  />
+                </picture>
               </li>
               <li class="gallery-list__item">
-                <img
-                  class="gallery-list__img"
-                  src="/img/gallery-men.jpg"
-                  alt="men"
-                />
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-men-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-men.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-men-desktop.jpg"
+                    alt="men"
+                  />
+                </picture>
               </li>
               <li class="gallery-list__item">
-                <img
-                  class="gallery-list__img"
-                  src="/img/gallery-speaker.jpg"
-                  alt="speaker"
-                />
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-speaker-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-speaker.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-speaker.jpg"
+                    alt="speaker"
+                  />
+                </picture>
               </li>
               <li class="gallery-list__item">
-                <img
-                  class="gallery-list__img"
-                  src="/img/gallery-cityes.jpg"
-                  alt="city"
-                />
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-cityes-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-cityes.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-cityes.jpg"
+                    alt="cityes"
+                  />
+                </picture>
               </li>
               <li class="gallery-list__item">
-                <img
-                  class="gallery-list__img"
-                  src="/img/gallery-girls.jpg"
-                  alt="girls"
-                />
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-girls-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-girls.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-girls.jpg"
+                    alt="girls"
+                  />
+                </picture>
               </li>
             </ul>
             <a class="gallery__link" href="#">Show More</a>
@@ -261,15 +496,43 @@
         <div class="description__wrapper">
           <h2 class="description__title">About Us</h2>
           <p class="description__text">About Our Video Creation Company!</p>
-          <div class="description__card description-card">
-            <span class="description-card__count">2000<sup>+</sup></span>
-            <h3 class="description-card__title">Clients Served</h3>
-            <p class="description-card__text">
-              We`ve been doing this for years and will be doing it for many
-              more! Our client count has touched the 2k bar and continues to
-              grow with uninterrupted momentum!
-            </p>
-          </div>
+          <ul class="description__list desc-list">
+            <li class="desc-list__item">
+              <span class="desc-list__count">2000<sup>+</sup></span>
+              <h3 class="desc-list__title">Clients Served</h3>
+              <p class="desc-list__text">
+                We`ve been doing this for years and will be doing it for many
+                more! Our client count has touched the 2k bar and continues to
+                grow with uninterrupted momentum!
+              </p>
+            </li>
+            <li class="desc-list__item">
+              <span class="desc-list__count">17<sup>+</sup></span>
+              <h3 class="desc-list__title">Clients Served</h3>
+              <p class="desc-list__text">
+                Not one, not two….we`ve gone global exorbitantly! We`ve served
+                more than 7 countries and are excited to add new names to our
+                list!
+              </p>
+            </li>
+            <li class="desc-list__item">
+              <span class="desc-list__count">10<sup>+</sup></span>
+              <h3 class="desc-list__title">Clients Served</h3>
+              <p class="desc-list__text">
+                Yes! We`re the Jack of all trades and masters of all as well!
+                With over 10 video styles mastered, we can guarantee perfection,
+                elegance and sharpness in our video production services!
+              </p>
+            </li>
+            <li class="desc-list__item">
+              <span class="desc-list__count">98<sup>%</sup></span>
+              <h3 class="desc-list__title">Clients Served</h3>
+              <p class="desc-list__text">
+                Don`t trust us? Well...trust the ones who we`ve worked for. A
+                whooping 98% satisfaction ratio says it all!
+              </p>
+            </li>
+          </ul>
           <div class="description__selectors">
             <label class="description__label">
               <span class="visually-hidden"> Select image</span>
@@ -319,7 +582,7 @@
                 name="selector-of-feedback"
               />
             </label>
-  
+
             <label class="feedback__label">
               <span class="visually-hidden"> Select card</span>
               <input
@@ -444,7 +707,6 @@
             </li>
           </ul>
           <div class="review__arrows">
-
             <button class="reviews__arrow">
               <img
                 class="reviews__img"
@@ -568,13 +830,10 @@
             </ul>
           </div>
         </div>
-        <p class="footer__copyright">
-          Copyright Mysterymonks © 2023
-        </p>
-        <p class="footer__rights">
-          All rights reserved.
-        </p>
+        <p class="footer__copyright">Copyright Mysterymonks © 2023</p>
+        <p class="footer__rights">All rights reserved.</p>
       </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

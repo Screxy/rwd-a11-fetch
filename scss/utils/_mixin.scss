@@ -1,8 +1,11 @@
 @use "variables" as *;
-@mixin wrapper($display: flex, $maxwidth: 390px) {
+@mixin wrapper($display: flex, $maxwidth: 39rem) {
   display: $display;
   max-width: $maxwidth;
   margin: 0 auto;
+  @media (min-width: 1200px) {
+    max-width: 120rem;
+  }
 }
 
 @mixin title() {
@@ -11,6 +14,10 @@
   line-height: 3.3rem;
   color: color(primaryTitleColor);
   text-align: center;
+  @media (min-width: 1200px) {
+    font-size: 4.6rem;
+    line-height: 6.3rem;
+  }
 }
 @mixin subTitle() {
   font-weight: 400;
@@ -18,6 +25,11 @@
   line-height: 2.5rem;
   color: color(subtitleColor);
   text-align: center;
+  @media (min-width: 1200px) {
+    margin-top: 0.8rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
 }
 
 @mixin secondTitle() {
@@ -56,4 +68,14 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: color(footerTextColor);
+}
+$sizes: ("sm":576px, "md":768px, "lg":992px, "xl":1200px);
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media only screen and (#{$minmax}-width: $resolution) {
+        @content;
+      }
+    }
+  }
 }

@@ -1,0 +1,35 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+.nav-list {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+  @include media(min,xl) {
+    display: flex;
+    position: static;
+    align-items: center;
+  }
+}
+.nav-list_active {
+  display: block;
+}
+.nav-list__item:nth-last-child(1) {
+  @include linkBtn();
+  border-radius: 20rem;
+  margin: 0;
+  &>.nav-list_link{
+      color: color(secondDescColor);
+  }
+}
+.nav-list__item + .nav-list__item{
+    @include media(min, xl){
+        margin-left: 2rem;
+    }
+}
+.nav-list_link {
+  @include desc();
+  color: color(secondTitleColor);
+  text-decoration: none;
+  right: 0;
+}
