@@ -37,6 +37,10 @@
   font-size: 2rem;
   line-height: 3.2rem;
   color: color(secondTitleColor);
+  @include media(min, xl) {
+    font-size: 4rem;
+    line-height: 5.4rem;
+  }
 }
 
 @mixin desc() {
@@ -69,7 +73,12 @@
   line-height: 2.4rem;
   color: color(footerTextColor);
 }
-$sizes: ("sm":576px, "md":768px, "lg":992px, "xl":1200px);
+$sizes: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
 @mixin media($minmax, $media) {
   @each $size, $resolution in $sizes {
     @if $media == $size {
