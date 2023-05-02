@@ -12,4 +12,7 @@
 .industries__link {
   @include footerText();
   text-decoration: none;
+  @include media(min, xl) {
+    font-weight: 400;
+  }
 }

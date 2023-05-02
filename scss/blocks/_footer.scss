@@ -8,18 +8,31 @@
 .footer__wrapper {
   @include wrapper();
   flex-direction: column;
-  @include media(min,xl){
-   flex-direction: row;
+  @include media(min, xl) {
+    display: grid;
+    padding-top: 6rem;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    grid-template-rows: 3fr 1fr;
   }
 }
 .footer__company {
   margin-top: 2rem;
+  @include media(min, xl) {
+    margin: 0;
+  }
 }
 .footer__industries {
   margin-top: 3rem;
+  @include media(min, xl) {
+    margin: 0;
+  }
 }
 .footer__contact {
   margin-top: 5rem;
+  @include media(min, xl) {
+    margin: 0;
+    grid-column: 5/6;
+  }
 }
 .footer__socials {
   margin-top: 2rem;
@@ -27,9 +40,18 @@
 .footer__copyright {
   @include footerText();
   margin-top: 2.5rem;
+  @include media(min, xl) {
+    margin-top: auto;
+    grid-row: 2/3;
+  }
 }
 .footer__rights {
   @include footerText();
   line-height: 2rem;
   color: color(secondDescColor);
+  @include media(min, xl) {
+    margin-top: auto;
+    grid-column-end: -1;
+    grid-row: 2/3;
+  }
 }
