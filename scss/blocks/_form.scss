@@ -1,10 +1,12 @@
+@use "../utils/mixin" as *;
 @use "../utils/variables" as *;
+@use "../utils/function" as *;
+
 .form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 2.5rem 3rem;
-
   background-color: color(secondTitleColor);
 }
 .form__title {
@@ -12,6 +14,7 @@
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.7rem;
+  width: 100%;
 
   text-align: center;
   margin-top: 2rem;
@@ -22,9 +25,24 @@
   & > textarea {
     width: 100%;
     margin-top: 2rem;
+    background-color: color(secondTitleColor);
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 1.4rem 0;
+    color: color(secondDescColor);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
   }
   &:nth-child(-n + 3) {
-    width: 50%;
+    width: calc(100% / 2 - 2rem);
+  }
+  & > input::placeholder,
+  & > textarea::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: color(secondDescColor);
   }
 }
 
@@ -36,9 +54,19 @@
 // }
 // .form__number {
 // }
-// .form__requirement {
-// }
+.form__requirement {
+  resize: none;
+}
 .form__submit {
+  padding: 1.2rem;
   margin-top: 2rem;
   margin-right: auto;
+  background-color: color(secondTitleColor);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: color(secondDescColor);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }

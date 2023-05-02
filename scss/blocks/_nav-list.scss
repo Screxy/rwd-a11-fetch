@@ -1,5 +1,7 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
+@use "../utils/function" as *;
+
 .nav-list {
   position: absolute;
   width: 100%;

@@ -10,21 +10,23 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a href="#" class="header__link">
+        <a href="/index.html" class="header__link">
           <picture>
             <source
-              class="header__logo"
               srcset="/img/main-logo-Dekstop.png"
               media="(min-width: 1200px)"
               type="image/png"
             />
             <source
-              class="header__logo"
               srcset="/img/main-logo.png"
               media="(min-width: 390px)"
               type="image/png"
             />
-            <img src="/img/main-logo-Dekstop.png" alt="logo" />
+            <img
+              class="header__logo"
+              src="/img/main-logo-Dekstop.png"
+              alt="logo"
+            />
           </picture>
         </a>
         <nav class="header__nav">
@@ -42,25 +44,29 @@
           </svg>
           <ul class="header__nav-list nav-list">
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">Home</a>
+              <a href="#home-section" class="nav-list_link">Home</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">Our Client</a>
+              <a href="#clients-section" class="nav-list_link">Our Client</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">Our Portfolio</a>
+              <a href="#portfolio-section" class="nav-list_link"
+                >Our Portfolio</a
+              >
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">About Us</a>
+              <a href="#description-section" class="nav-list_link">About Us</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">Why us</a>
+              <a href="#feedback-section" class="nav-list_link">Why us</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">Types of videos</a>
+              <a href="#examples-section" class="nav-list_link"
+                >Types of videos</a
+              >
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list_link">Reviews</a>
+              <a href="#reviews-section" class="nav-list_link">Reviews</a>
             </li>
             <li class="nav-list__item">
               <a href="#" class="nav-list_link"
@@ -76,7 +82,7 @@
       </div>
     </header>
     <main>
-      <section class="home">
+      <section id="home-section" class="home">
         <div class="home__wrapper">
           <h1 class="home__title">
             Best <span class="home__title_highlight">Animation</span> &
@@ -86,21 +92,19 @@
             According to Forbes, a Video can boost conversion rate by 80%, and
             grow revenue by average 49%.
           </p>
-          <div class="home__img home-img">
+          <div class="home__img">
             <picture>
               <source
-                class="header__logo"
                 srcset="/img/home-main-desktop.jpg"
                 media="(min-width: 1200px)"
                 type="image/png"
               />
               <source
-                class="header__logo"
                 srcset="/img/home-main.jpg"
                 media="(min-width: 390px)"
                 type="image/png"
               />
-              <img src="/img/home-main-desktop.jpg" alt="logo" />
+              <img class="home__image" src="/img/home-main-desktop.jpg" alt="logo" />
             </picture>
             <!-- <img
               src="/img/baseline-play-arrow.svg"
@@ -160,7 +164,7 @@
           </form>
         </div>
       </section>
-      <section class="clients">
+      <section id="clients-section" class="clients">
         <div class="clients__wrapper">
           <h2 class="clients__title">Our Clients</h2>
           <p class="clients__text">You might have heard of them</p>
@@ -279,14 +283,14 @@
             </li>
           </ul>
           <div class="clients__selectors">
-            <input
-              type="radio"
-              class="clients__selector"
-              name="selector-of-company"
-              id="selector-of-company1of4"
-            />
-            <label class="clients__label" for="selector-of-company1of4">
+            <label class="clients__label">
               <span class="visually-hidden"> Select image </span>
+              <input
+                type="radio"
+                class="clients__selector"
+                name="selector-of-company"
+              />
+              <span></span>
             </label>
             <label class="clients__label">
               <span class="visually-hidden"> Select image</span>
@@ -296,6 +300,7 @@
                 class="clients__selector"
                 name="selector-of-company"
               />
+              <span></span>
             </label>
             <label class="clients__label">
               <span class="visually-hidden"> Select image</span>
@@ -305,6 +310,7 @@
                 class="clients__selector"
                 name="selector-of-company"
               />
+              <span></span>
             </label>
             <label class="clients__label">
               <span class="visually-hidden"> Select image</span>
@@ -314,11 +320,12 @@
                 class="clients__selector"
                 name="selector-of-company"
               />
+              <span></span>
             </label>
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section id="portfolio-section" class="portfolio">
         <div class="portfolio__wrapper">
           <h2 class="portfolio__title">Portfolio</h2>
           <p class="portfolio__text">
@@ -492,7 +499,7 @@
           </div>
         </div>
       </section>
-      <section class="description">
+      <section id="description-section" class="description">
         <div class="description__wrapper">
           <h2 class="description__title">About Us</h2>
           <p class="description__text">About Our Video Creation Company!</p>
@@ -541,6 +548,7 @@
                 type="radio"
                 name="description-card-selector"
               />
+              <span></span>
             </label>
             <label class="description__label">
               <span class="visually-hidden"> Select image</span>
@@ -549,11 +557,12 @@
                 type="radio"
                 name="description-card-selector"
               />
+              <span></span>
             </label>
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section id="feedback-section" class="feedback">
         <div class="feedback__wrapper">
           <h2 class="feedback__title">Why us?</h2>
           <p class="feedback__text">
@@ -587,11 +596,11 @@
                 src="/img/cubes-solid.svg"
                 alt="cubes icon"
               />
-              <h3 class="feedback-list__title">Error Free Delivery</h3>
+              <h3 class="feedback-list__title">All Inclusive Packages</h3>
               <p class="feedback-list__text">
-                Our Creative Directors ensure thorough quality checks before any
-                deliverable (script, voice over, renders, animation, etc.) goes
-                out to you.
+                Our packages include an end to end service which means a client
+                only needs to tell us about their product/service and our team
+                takes care of the rest.
               </p>
             </li>
             <li class="feedback-list__card">
@@ -600,11 +609,11 @@
                 src="/img/video-solid.svg"
                 alt="videocamera icon"
               />
-              <h3 class="feedback-list__title">Error Free Delivery</h3>
+              <h3 class="feedback-list__title">Creative Direction</h3>
               <p class="feedback-list__text">
-                Our Creative Directors ensure thorough quality checks before any
-                deliverable (script, voice over, renders, animation, etc.) goes
-                out to you.
+                Every single project is managed by a highly skilled and
+                experienced Creative Director to ensure a great concept, quality
+                and timely delivery.
               </p>
             </li>
             <li class="feedback-list__card">
@@ -613,11 +622,10 @@
                 src="/img/calendar.svg"
                 alt="calendar ico"
               />
-              <h3 class="feedback-list__title">Error Free Delivery</h3>
+              <h3 class="feedback-list__title">On Time Delivery</h3>
               <p class="feedback-list__text">
-                Our Creative Directors ensure thorough quality checks before any
-                deliverable (script, voice over, renders, animation, etc.) goes
-                out to you.
+                We use advanced project planning software to ensure that you get
+                your video delivered in the time committed by us.
               </p>
             </li>
           </ul>
@@ -629,15 +637,7 @@
                 class="feedback__selector"
                 name="selector-of-feedback"
               />
-            </label>
-
-            <label class="feedback__label">
-              <span class="visually-hidden"> Select card</span>
-              <input
-                type="radio"
-                class="feedback__selector"
-                name="selector-of-feedback"
-              />
+              <span></span>
             </label>
             <label class="feedback__label">
               <span class="visually-hidden"> Select card</span>
@@ -646,6 +646,7 @@
                 class="feedback__selector"
                 name="selector-of-feedback"
               />
+              <span></span>
             </label>
             <label class="feedback__label">
               <span class="visually-hidden"> Select card</span>
@@ -654,11 +655,21 @@
                 class="feedback__selector"
                 name="selector-of-feedback"
               />
+              <span></span>
+            </label>
+            <label class="feedback__label">
+              <span class="visually-hidden"> Select card</span>
+              <input
+                type="radio"
+                class="feedback__selector"
+                name="selector-of-feedback"
+              />
+              <span></span>
             </label>
           </div>
         </div>
       </section>
-      <section class="examples">
+      <section id="examples-section" class="examples">
         <div class="examples__wrapper">
           <h2 class="examples__title">Types of Videos</h2>
           <ul class="examples__list">
@@ -685,15 +696,15 @@
               <div class="examples-card__text">
                 <h3 class="examples-card__title">Animated Explainer Video</h3>
                 <p class="examples-card__desc">
-                  It`s about time that we throw out the old ways of communicating
-                  with our prospects. Be it a document, an image or a
-                  presentation….there`s always something amiss. Catch up with the
-                  current era! Animated explainer videos not only get your brand
-                  message across, but also give the extra little push to convert a
-                  maybe to a definite yes! Be it a 2D or a 3D video produced by
-                  our explainer video company, the ensemble of attractive visuals,
-                  a breathtaking voice over with a mind blowing concept is
-                  unbeatable!
+                  It`s about time that we throw out the old ways of
+                  communicating with our prospects. Be it a document, an image
+                  or a presentation….there`s always something amiss. Catch up
+                  with the current era! Animated explainer videos not only get
+                  your brand message across, but also give the extra little push
+                  to convert a maybe to a definite yes! Be it a 2D or a 3D video
+                  produced by our explainer video company, the ensemble of
+                  attractive visuals, a breathtaking voice over with a mind
+                  blowing concept is unbeatable!
                 </p>
                 <a href="#" class="examples-card__link">Get a Quote</a>
               </div>
@@ -721,14 +732,14 @@
               <div class="examples-card__text">
                 <h3 class="examples-card__title">Product Explainer Video</h3>
                 <p class="examples-card__desc">
-                  What influences people to buy one product but not the other? Is
-                  it its composition, its features...or maybe its appearance? We
-                  as a explainer video company think how you market your product
-                  is what determines how well it sells. And a 2D or 3D product
-                  explainer video showcasing your product`s features, appearance
-                  and composition can build your sales from level zero to
-                  infinity. Don`t just advertise for the sake of doing it….be a
-                  pro with a unique product explainer video!
+                  What influences people to buy one product but not the other?
+                  Is it its composition, its features...or maybe its appearance?
+                  We as a explainer video company think how you market your
+                  product is what determines how well it sells. And a 2D or 3D
+                  product explainer video showcasing your product`s features,
+                  appearance and composition can build your sales from level
+                  zero to infinity. Don`t just advertise for the sake of doing
+                  it….be a pro with a unique product explainer video!
                 </p>
                 <a href="#" class="examples-card__link">Get a Quote</a>
               </div>
@@ -756,14 +767,14 @@
               <div class="examples-card__text">
                 <h3 class="examples-card__title">Whiteboard Explainer Video</h3>
                 <p class="examples-card__desc">
-                  Keep it simple. Whiteboard explainer videos give your audience a
-                  ride back through Nostalgia lane. Remember how your teacher
-                  could solve a complex Physics equation on the board and make it
-                  look so simple? Well a whiteboard explainer video does the same
-                  for your business. Get your brand message across in the most
-                  understandable way possible. And enjoy the topping of
-                  mouthwatering swiftness and eye-catching visuals! Your next pit
-                  stop should definitely be our explainer video company!
+                  Keep it simple. Whiteboard explainer videos give your audience
+                  a ride back through Nostalgia lane. Remember how your teacher
+                  could solve a complex Physics equation on the board and make
+                  it look so simple? Well a whiteboard explainer video does the
+                  same for your business. Get your brand message across in the
+                  most understandable way possible. And enjoy the topping of
+                  mouthwatering swiftness and eye-catching visuals! Your next
+                  pit stop should definitely be our explainer video company!
                 </p>
                 <a href="#" class="examples-card__link">Get a Quote</a>
               </div>
@@ -794,9 +805,9 @@
                   Impressions are important! And nothing can help you introduce
                   your brand to the world better than a world-class corporate
                   video! Pump up the hype, poke at the curiosity and generate a
-                  sense of connection within your masses. How you present yourself
-                  to the world matters….and a perfectly shot video is a great step
-                  to ensure your brand`s success.
+                  sense of connection within your masses. How you present
+                  yourself to the world matters….and a perfectly shot video is a
+                  great step to ensure your brand`s success.
                 </p>
                 <a href="#" class="examples-card__link">Get a Quote</a>
               </div>
@@ -804,16 +815,19 @@
           </ul>
         </div>
       </section>
-      <section class="reviews">
+      <section id="reviews-section" class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Love From Our Customer</h2>
           <ul class="reviews__list">
             <li class="reviews__card review-card">
-              <p class="review-card__text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vivamus tempus consectetur mi nec hendrerit. Integer id est
-                massa.”
-              </p>
+              <div class="review-card__text">
+                <img src="/img/quotes.svg" alt="Quotes image" />
+                <article>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus tempus consectetur mi nec hendrerit. Integer id est
+                  massa.”
+                </article>
+              </div>
               <p class="review-card__name">Vedant Sharma</p>
               <p class="review-card__post">Local Guide</p>
             </li>
@@ -942,9 +956,10 @@
             </ul>
           </div>
         </div>
-        <p class="footer__copyright">Copyright Mysterymonks © 2023</p>
-        <p class="footer__rights">All rights reserved.</p>
       </div>
+      <section class="footer__"></section>
+      <p class="footer__copyright">Copyright Mysterymonks © 2023</p>
+      <p class="footer__rights">All rights reserved.</p>
     </footer>
     <script src="/js/script.js"></script>
   </body>

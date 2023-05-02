@@ -1,7 +1,10 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
+@use "../utils/function" as *;
+
 .feedback-list {
   display: flex;
+  margin-top: 6rem;
   gap: 1.8rem;
   padding-top: 4rem;
 }

@@ -1,5 +1,6 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
+@use "../utils/function" as *;
 
 .desc-list{
   display: flex;

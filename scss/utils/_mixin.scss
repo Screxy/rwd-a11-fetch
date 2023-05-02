@@ -1,9 +1,20 @@
+@use "function" as *;
 @use "variables" as *;
-@mixin wrapper($display: flex, $maxwidth: 39rem) {
+
+@mixin wrapper($display: flex, $maxwidth: 32rem) {
   display: $display;
   max-width: $maxwidth;
   margin: 0 auto;
-  @media (min-width: 1200px) {
+  padding: 0 1rem;
+  @include media(min, xs) {
+    min-width: 39rem;
+    padding: 0 1rem;
+  }
+  @include media(min, sm) {
+    min-width: 57.6rem;
+    padding: 0;
+  }
+  @include media(min, xl) {
     max-width: 120rem;
   }
 }
@@ -73,12 +84,6 @@
   line-height: 2.4rem;
   color: color(footerTextColor);
 }
-$sizes: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-);
 @mixin media($minmax, $media) {
   @each $size, $resolution in $sizes {
     @if $media == $size {

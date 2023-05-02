@@ -1,5 +1,7 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
+@use "../utils/function" as *;
+
 .examples-card {
   padding-bottom: 0.3rem;
   @include media(min,xl){

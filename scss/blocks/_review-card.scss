@@ -1,8 +1,13 @@
 @use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+@use "../utils/function" as *;
 
-// .review-card {
-// }
+
+.review-card {
+}
 .review-card__text {
+  display: flex;
+  gap: 2rem;
   padding: 3rem;
   background: #54387f;
   box-shadow: 40px 60px 60px -20px rgba(0, 0, 0, 0.176);
@@ -11,6 +16,15 @@
   font-size: 1.4rem;
   line-height: 2.7rem;
   color: color(secondDescColor);
+  @include media(min,xl){
+    margin: 0 auto;
+    max-width: 60rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    padding-right: 8rem;
+    // text-align: center;
+    font-size: 2rem;
+  }
 }
 .review-card__name {
   margin-top: 2rem;

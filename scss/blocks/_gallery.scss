@@ -1,5 +1,7 @@
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
+@use "../utils/function" as *;
+
 .gallery {
   display: flex;
   margin-top: 4rem;

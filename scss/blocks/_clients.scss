@@ -1,5 +1,7 @@
 @use "../utils/mixin" as *;
 @use "../utils/variables" as *;
+@use "../utils/function" as *;
+
 
 .clients {
   margin-top: 4rem;
@@ -49,11 +51,10 @@
   margin-left: 1rem;
   display: inline-flex;
 }
-.clients__selector:checked+.clients__label::before{
+.clients__selector:checked+span{
   background-color: #EF5537;
 }
-.clients__label::before {
-  content: "";
+.clients__selector+span {
   flex: 0 0 1rem;
   height: 1rem;
   background-color: #CACACA;

@@ -2,6 +2,9 @@
 .examples {
   margin-top: 4rem;
   background-color: #f5f5f5;
+  @include media(min,xl){
+    padding-bottom: 7rem;
+  }
 }
 .examples__wrapper {
   @include wrapper();
@@ -17,4 +20,7 @@
 }
 .examples__card:nth-child(n + 2) {
   margin-top: 5rem;
+  @include media(min,xl){
+    margin-top: 10rem;
+  }
 }
