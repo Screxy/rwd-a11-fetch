@@ -38,20 +38,23 @@
   margin-top: 2rem;
 }
 .footer__copyright {
-  @include footerText();
+  @include footerCopy();
   margin-top: 2.5rem;
   @include media(min, xl) {
     margin-top: auto;
     grid-row: 2/3;
+    font-weight: 400;
+
   }
 }
 .footer__rights {
-  @include footerText();
+  @include footerCopy();
   line-height: 2rem;
   color: color(secondDescColor);
   @include media(min, xl) {
     margin-top: auto;
     grid-column-end: -1;
     grid-row: 2/3;
+    font-weight: 400;
   }
 }

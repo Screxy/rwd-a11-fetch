@@ -20,41 +20,27 @@
   margin-top: 2rem;
 }
 .form__label {
+  margin-top: 2rem;
   width: 100%;
-  & > input,
-  & > textarea {
-    width: 100%;
-    margin-top: 2rem;
-    background-color: color(secondTitleColor);
-    border: none;
-    border-bottom: 1px solid white;
-    padding: 1.4rem 0;
-    color: color(secondDescColor);
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-  }
   &:nth-child(-n + 3) {
     width: calc(100% / 2 - 2rem);
   }
-  & > input::placeholder,
-  & > textarea::placeholder {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    color: color(secondDescColor);
-  }
 }
 
-// .form__name {
-// }
-// .form__surname {
-// }
-// .form__email {
-// }
-// .form__number {
-// }
+.form__name {
+  @include FormInput();
+}
+.form__surname {
+  @extend .form__name;
+}
+.form__email {
+  @extend .form__name;
+}
+.form__number {
+  @extend .form__name;
+}
 .form__requirement {
+  @extend .form__name;
   resize: none;
 }
 .form__submit {

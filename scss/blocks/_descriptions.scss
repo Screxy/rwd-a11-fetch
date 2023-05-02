@@ -2,22 +2,22 @@
 @use "../utils/variables" as *;
 @use "../utils/function" as *;
 
-.desc-list{
+.descriptions{
   display: flex;
   gap: 11rem;
 }
 
-.desc-list__item{
+.descriptions__item{
   display: flex;
   flex-direction: column;
 }
-.desc-list__item:nth-child(n+2){
+.descriptions__item:nth-child(n+2){
   display: none;
   @include media(min,xl){
     display: flex;
   }
 }
-.desc-list__count {
+.descriptions__count {
   margin: 2rem auto;
 
   font-weight: 600;
@@ -26,14 +26,14 @@
   color: color(subtitleColor);
   text-align: center;
 }
-.desc-list__title {
+.descriptions__title {
   @include secondTitle();
   text-align: center;
   line-height: 2.4rem;
 }
-.desc-list__text {
-  margin-top: 2rem;
+.descriptions__text {
   @include desc();
+  margin-top: 2rem;
   text-align: center;
 }
 // .description__label {

@@ -5,8 +5,8 @@
   flex-direction: column;
 }
 .target__title {
-  margin-top: 7.5rem;
   @include secondTitle();
+  margin-top: 7.5rem;
   font-size: 1.6rem;
   line-height: 4.2rem;
   text-align: center;

@@ -336,6 +336,7 @@ html {
 @media (min-width: 1200px) {
   .header {
     margin-top: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -549,20 +550,19 @@ html {
   margin-left: 1rem;
   display: inline-flex;
 }
+.clients__label:nth-child(1) {
+  margin: 0;
+}
 
 .clients__selector:checked + span {
-  background-color: #EF5537;
+  background-color: #ef5537;
 }
 
 .clients__selector + span {
   flex: 0 0 1rem;
   height: 1rem;
-  background-color: #CACACA;
+  background-color: #cacaca;
   border-radius: 50%;
-}
-
-.clients__label:nth-child(1) {
-  margin: 0;
 }
 
 .clients__selector {
@@ -592,6 +592,9 @@ html {
   color: #f6f6f6;
   text-decoration: none;
 }
+.company__link:hover {
+  color: #ef5537;
+}
 @media only screen and (min-width: 1200px) {
   .company__link {
     font-weight: 400;
@@ -610,26 +613,26 @@ html {
   margin-top: 2rem;
 }
 
-.desc-list {
+.descriptions {
   display: flex;
   gap: 11rem;
 }
 
-.desc-list__item {
+.descriptions__item {
   display: flex;
   flex-direction: column;
 }
 
-.desc-list__item:nth-child(n+2) {
+.descriptions__item:nth-child(n+2) {
   display: none;
 }
 @media only screen and (min-width: 1200px) {
-  .desc-list__item:nth-child(n+2) {
+  .descriptions__item:nth-child(n+2) {
     display: flex;
   }
 }
 
-.desc-list__count {
+.descriptions__count {
   margin: 2rem auto;
   font-weight: 600;
   font-size: 8rem;
@@ -638,7 +641,7 @@ html {
   text-align: center;
 }
 
-.desc-list__title {
+.descriptions__title {
   font-weight: 600;
   font-size: 2rem;
   line-height: 3.2rem;
@@ -647,18 +650,18 @@ html {
   line-height: 2.4rem;
 }
 @media only screen and (min-width: 1200px) {
-  .desc-list__title {
+  .descriptions__title {
     font-size: 4rem;
     line-height: 5.4rem;
   }
 }
 
-.desc-list__text {
-  margin-top: 2rem;
+.descriptions__text {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.5rem;
   color: #6a6a6a;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -1148,6 +1151,7 @@ html {
   .footer__copyright {
     margin-top: auto;
     grid-row: 2/3;
+    font-weight: 400;
   }
 }
 
@@ -1164,6 +1168,7 @@ html {
     margin-top: auto;
     grid-column-end: -1;
     grid-row: 2/3;
+    font-weight: 400;
   }
 }
 
@@ -1186,11 +1191,15 @@ html {
 }
 
 .form__label {
+  margin-top: 2rem;
   width: 100%;
 }
-.form__label > input, .form__label > textarea {
+.form__label:nth-child(-n+3) {
+  width: calc(50% - 2rem);
+}
+
+.form__name, .form__requirement, .form__number, .form__email, .form__surname {
   width: 100%;
-  margin-top: 2rem;
   background-color: #2a2a2a;
   border: none;
   border-bottom: 1px solid white;
@@ -1200,16 +1209,13 @@ html {
   font-size: 1.4rem;
   line-height: 1.9rem;
 }
-.form__label:nth-child(-n+3) {
-  width: calc(50% - 2rem);
-}
-.form__label > input::-moz-placeholder, .form__label > textarea::-moz-placeholder {
+.form__name::-moz-placeholder, .form__requirement::-moz-placeholder, .form__number::-moz-placeholder, .form__email::-moz-placeholder, .form__surname::-moz-placeholder {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.9rem;
   color: #ffffff;
 }
-.form__label > input::placeholder, .form__label > textarea::placeholder {
+.form__name::placeholder, .form__requirement::placeholder, .form__number::placeholder, .form__email::placeholder, .form__surname::placeholder {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.9rem;
@@ -1258,6 +1264,9 @@ html {
   line-height: 2.4rem;
   color: #f6f6f6;
   color: #6a6a6a;
+}
+.gallery__label > span:hover {
+  color: #ef5537;
 }
 @media only screen and (min-width: 1200px) {
   .gallery__label > span {
@@ -1320,6 +1329,9 @@ html {
   line-height: 2.4rem;
   color: #f6f6f6;
   text-decoration: none;
+}
+.industries__link:hover {
+  color: #ef5537;
 }
 @media only screen and (min-width: 1200px) {
   .industries__link {
@@ -1531,11 +1543,11 @@ html {
 }
 
 .target__title {
-  margin-top: 7.5rem;
   font-weight: 600;
   font-size: 2rem;
   line-height: 3.2rem;
   color: #2a2a2a;
+  margin-top: 7.5rem;
   font-size: 1.6rem;
   line-height: 4.2rem;
   text-align: center;
@@ -1582,6 +1594,9 @@ html {
   line-height: 4rem;
   text-decoration: none;
 }
+.tel__link:hover {
+  color: #ef5537;
+}
 
 .email__title {
   font-weight: 600;
@@ -1599,6 +1614,9 @@ html {
   font-weight: 700;
   line-height: 4rem;
   text-decoration: none;
+}
+.email__link:hover {
+  color: #ef5537;
 }
 
 .nav-list {

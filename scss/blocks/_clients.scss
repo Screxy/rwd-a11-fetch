@@ -2,7 +2,6 @@
 @use "../utils/variables" as *;
 @use "../utils/function" as *;
 
-
 .clients {
   margin-top: 4rem;
 }
@@ -22,14 +21,14 @@
   display: flex;
   margin-top: 5rem;
   justify-content: space-around;
-  @include media(min,xl){
+  @include media(min, xl) {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
-.clients__logo:nth-child(n+4) {
+.clients__logo:nth-child(n + 4) {
   display: none;
-  @include media(min,xl){
+  @include media(min, xl) {
     display: block;
   }
 }
@@ -43,26 +42,26 @@
   margin: 1rem auto 0;
 
   width: max-content;
-  @media(min-width: 1200px){
+  @media (min-width: 1200px) {
     display: none;
   }
 }
 .clients__label {
   margin-left: 1rem;
   display: inline-flex;
+  &:nth-child(1) {
+    margin: 0;
+  }
 }
-.clients__selector:checked+span{
-  background-color: #EF5537;
+.clients__selector:checked + span {
+  background-color: #ef5537;
 }
-.clients__selector+span {
+.clients__selector + span {
   flex: 0 0 1rem;
   height: 1rem;
-  background-color: #CACACA;
+  background-color: #cacaca;
   border-radius: 50%;
 }
-.clients__label:nth-child(1) {
-  margin: 0;
-}
-.clients__selector{
+.clients__selector {
   display: none;
 }

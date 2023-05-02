@@ -83,6 +83,15 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: color(footerTextColor);
+  &:hover {
+    color: color(primaryTitleColor);
+  }
+}
+@mixin footerCopy() {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: color(footerTextColor);
 }
 @mixin media($minmax, $media) {
   @each $size, $resolution in $sizes {
@@ -91,5 +100,22 @@
         @content;
       }
     }
+  }
+}
+@mixin FormInput() {
+  width: 100%;
+  background-color: color(secondTitleColor);
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 1.4rem 0;
+  color: color(secondDescColor);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: color(secondDescColor);
   }
 }
