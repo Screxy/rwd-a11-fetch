@@ -2,7 +2,7 @@
 @use "../utils/variables" as *;
 @use "../utils/function" as *;
 
-.nav-list {
+.nav__list {
   position: absolute;
   width: 100%;
   background-color: #fff;
@@ -13,23 +13,23 @@
     align-items: center;
   }
 }
-.nav-list_active {
+.nav__list_active {
   display: block;
 }
-.nav-list__item:nth-last-child(1) {
+.nav__item:nth-last-child(1) {
   @include linkBtn();
   border-radius: 20rem;
   margin: 0;
-  &>.nav-list_link{
+  &>.nav__link{
       color: color(secondDescColor);
   }
 }
-.nav-list__item + .nav-list__item{
+.nav__item + .nav__item{
     @include media(min, xl){
         margin-left: 2rem;
     }
 }
-.nav-list_link {
+.nav__link {
   @include desc();
   color: color(secondTitleColor);
   text-decoration: none;
