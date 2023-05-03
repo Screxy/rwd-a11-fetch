@@ -325,6 +325,9 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+body.lock {
+  overflow: hidden;
+}
 
 html {
   font-size: 62.5%;
@@ -375,7 +378,7 @@ html {
   z-index: 1;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .header__burger {
     display: none;
   }
@@ -1634,6 +1637,7 @@ html {
 }
 
 .nav__list_active {
+  overflow: hidden;
   display: block;
 }
 

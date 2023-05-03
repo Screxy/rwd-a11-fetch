@@ -3,7 +3,7 @@
 
 .header {
   margin-top: 2.7rem;
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     margin-top: 2rem;
     padding: 2rem 0;
   }
@@ -24,7 +24,7 @@
   z-index: 1;
 }
 .header__burger {
-  @media (min-width:1200px){
+  @include media(min, xl) {
     display: none;
-  } 
+  }
 }
