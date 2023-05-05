@@ -26,51 +26,57 @@
               class="header__logo logo"
               src="/img/main-logo-Dekstop.png"
               alt="Mystery Monks logo"
-              width="200px"
+              width="200"
             />
           </picture>
         </a>
-        <nav class="header__nav nav">
-          <svg
-            class="header__burger"
-            width="20"
-            height="27"
-            viewBox="0 0 20 27"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect y="5" width="20" height="4" rx="2" fill="#EF5537" />
-            <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" />
-            <rect y="23" width="20" height="4" rx="2" fill="#EF5537" />
-          </svg>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home-section" class="nav__link">Home</a>
+        <svg
+          class="header__burger"
+          width="20"
+          height="27"
+          viewBox="0 0 20 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="5" width="20" height="4" rx="2" fill="#EF5537" />
+          <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" />
+          <rect y="23" width="20" height="4" rx="2" fill="#EF5537" />
+        </svg>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#home-section" class="navigation__link">Home</a>
             </li>
-            <li class="nav__item">
-              <a href="#clients-section" class="nav__link">Our Client</a>
+            <li class="navigation__item">
+              <a href="#clients-section" class="navigation__link">Our Client</a>
             </li>
-            <li class="nav__item">
-              <a href="#portfolio-section" class="nav__link">Our Portfolio</a>
+            <li class="navigation__item">
+              <a href="#portfolio-section" class="navigation__link"
+                >Our Portfolio</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="#description-section" class="nav__link">About Us</a>
+            <li class="navigation__item">
+              <a href="#description-section" class="navigation__link"
+                >About Us</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="#feedback-section" class="nav__link">Why us</a>
+            <li class="navigation__item">
+              <a href="#feedback-section" class="navigation__link">Why us</a>
             </li>
-            <li class="nav__item">
-              <a href="#examples-section" class="nav__link">Types of videos</a>
+            <li class="navigation__item">
+              <a href="#examples-section" class="navigation__link"
+                >Types of videos</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="#reviews-section" class="nav__link">Reviews</a>
+            <li class="navigation__item">
+              <a href="#reviews-section" class="navigation__link">Reviews</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link"
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"
                 ><img
                   src="/img/Lightning.svg"
                   alt="Lightning icon"
-                  class="nav-list__img"
+                  class="navigation__img"
                 />Get a Quote</a
               >
             </li>
@@ -82,42 +88,39 @@
       <section id="home-section" class="home">
         <div class="home__wrapper">
           <h1 class="home__title">
-            Best <span class="home__title_highlight">Animation</span> &
-            <span class="home__title_highlight">Video</span> Production Company
+            Best <span class="orange">Animation</span> &
+            <span class="orange">Video</span> Production Company
           </h1>
           <p class="home__text">
             According to Forbes, a Video can boost conversion rate by 80%, and
             grow revenue by average 49%.
           </p>
-          <div class="home__img">
-            <picture>
-              <source
-                srcset="/img/home-main-desktop.jpg"
-                media="(min-width: 1200px)"
-                type="image/png"
-              />
-              <source
-                srcset="/img/home-main.jpg"
-                media="(min-width: 390px)"
-                type="image/png"
-              />
-              <img
-                class="home__image"
-                src="/img/home-main-desktop.jpg"
-                alt="Illustration of a woman"
-              />
-            </picture>
-            <!-- <img
+          <picture>
+            <source
+              srcset="/img/home-main-desktop.jpg"
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="/img/home-main.jpg"
+              media="(min-width: 390px)"
+              type="image/png"
+            />
+            <img
+              class="home__image"
+              src="/img/home-main-desktop.jpg"
+              alt="Illustration of a woman"
+            />
+          </picture>
+          <!-- <img
               src="/img/baseline-play-arrow.svg"
               alt="play"
               class="home-img__play-img"
             /> -->
-          </div>
           <form action="#" class="home__form form">
             <h3 class="form__title">Speak to our Video Experts</h3>
             <label class="form__label">
               <span class="visually-hidden">Enter your name</span>
-
               <input type="text" class="form__name" placeholder="First Name" />
             </label>
 
@@ -134,7 +137,7 @@
               <span class="visually-hidden">Enter your Email</span>
 
               <input
-                type="text"
+                type="email"
                 class="form__email"
                 placeholder="Email Address"
               />
@@ -143,7 +146,7 @@
               <span class="visually-hidden">Enter your phone number</span>
 
               <input
-                type="text"
+                type="tel"
                 class="form__number"
                 placeholder="Phone number"
               />
@@ -277,42 +280,41 @@
               />
             </li>
           </ul>
-          <div class="clients__selectors">
-            <label class="clients__label">
+          <div class="clients__selectors selectors">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select image </span>
               <input
                 type="radio"
-                class="clients__selector"
+                class="selectors__radio"
                 name="selector-of-company"
               />
               <span></span>
             </label>
-            <label class="clients__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
 
               <input
                 type="radio"
-                class="clients__selector"
+                class="selectors__radio"
                 name="selector-of-company"
               />
               <span></span>
             </label>
-            <label class="clients__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
 
               <input
                 type="radio"
-                class="clients__selector"
+                class="selectors__radio"
                 name="selector-of-company"
               />
               <span></span>
             </label>
-            <label class="clients__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
-
               <input
                 type="radio"
-                class="clients__selector"
+                class="selectors__radio"
                 name="selector-of-company"
               />
               <span></span>
@@ -335,7 +337,7 @@
                   name="selector-of-portfolio"
                   checked
                 />
-                <span> All </span>
+                <span>All</span>
               </label>
               <label class="gallery__label">
                 <input
@@ -343,7 +345,7 @@
                   class="gallery__selector"
                   name="selector-of-portfolio"
                 />
-                <span> Finance</span>
+                <span>Finance</span>
               </label>
               <label class="gallery__label">
                 <input
@@ -351,7 +353,7 @@
                   class="gallery__selector"
                   name="selector-of-portfolio"
                 />
-                <span> Technology</span>
+                <span>Technology</span>
               </label>
               <label class="gallery__label">
                 <input
@@ -535,20 +537,20 @@
               </p>
             </li>
           </ul>
-          <div class="description__selectors">
-            <label class="description__label">
+          <div class="description__selectors selectors">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
               <input
-                class="description__selector"
+                class="selectors__radio"
                 type="radio"
                 name="description-card-selector"
               />
               <span></span>
             </label>
-            <label class="description__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
               <input
-                class="description__selector"
+                class="selectors__radio"
                 type="radio"
                 name="description-card-selector"
               />
@@ -564,10 +566,10 @@
             Why Choose Mystery Monks As Your Video Production and Animation
             Company?
           </p>
-          <ul class="feedback_list feedback-list">
-            <li class="feedback-list__card">
+          <ul class="feedback__feedbacks feedbacks">
+            <li class="feedbacks__card">
               <svg
-                class="feedback-list__img"
+                class="feedbacks__img"
                 width="50"
                 height="50"
                 viewBox="0 0 50 50"
@@ -578,85 +580,85 @@
                   d="M30.6055 3.0918C33.1445 3.59961 34.7949 6.07031 34.2871 8.60938L34.0625 9.72266C33.5449 12.3301 32.5879 14.8105 31.25 17.0664H45.3125C47.9004 17.0664 50 19.166 50 21.7539C50 23.5605 48.9746 25.1328 47.4707 25.9141C48.5352 26.7734 49.2188 28.0918 49.2188 29.5664C49.2188 31.8516 47.5781 33.7559 45.4199 34.166C45.8496 34.8789 46.0938 35.709 46.0938 36.5977C46.0938 38.6777 44.7363 40.4453 42.8613 41.0508C42.9297 41.373 42.9688 41.7148 42.9688 42.0664C42.9688 44.6543 40.8691 46.7539 38.2812 46.7539H28.7598C26.9043 46.7539 25.0977 46.207 23.5547 45.1816L19.7949 42.6719C17.1875 40.9336 15.625 38.0039 15.625 34.8691V31.1289V26.4414V24.0098C15.625 21.1582 16.9238 18.4727 19.1406 16.6855L19.8633 16.1094C22.4512 14.0391 24.2188 11.1289 24.8633 7.88672L25.0879 6.77344C25.5957 4.23437 28.0664 2.58398 30.6055 3.0918ZM3.125 18.6289H9.375C11.1035 18.6289 12.5 20.0254 12.5 21.7539V43.6289C12.5 45.3574 11.1035 46.7539 9.375 46.7539H3.125C1.39648 46.7539 0 45.3574 0 43.6289V21.7539C0 20.0254 1.39648 18.6289 3.125 18.6289Z"
                 />
               </svg>
-              <h3 class="feedback-list__title">Error Free Delivery</h3>
-              <p class="feedback-list__text">
+              <h3 class="feedbacks__title">Error Free Delivery</h3>
+              <p class="feedbacks__text">
                 Our Creative Directors ensure thorough quality checks before any
                 deliverable (script, voice over, renders, animation, etc.) goes
                 out to you.
               </p>
             </li>
-            <li class="feedback-list__card">
+            <li class="feedbacks__card">
               <img
-                class="feedback-list__img"
+                class="feedbacks__img"
                 src="/img/cubes-solid.svg"
                 alt="cubes icon"
               />
-              <h3 class="feedback-list__title">All Inclusive Packages</h3>
-              <p class="feedback-list__text">
+              <h3 class="feedbacks__title">All Inclusive Packages</h3>
+              <p class="feedbacks__text">
                 Our packages include an end to end service which means a client
                 only needs to tell us about their product/service and our team
                 takes care of the rest.
               </p>
             </li>
-            <li class="feedback-list__card">
+            <li class="feedbacks__card">
               <img
-                class="feedback-list__img"
+                class="feedbacks__img"
                 src="/img/video-solid.svg"
                 alt="videocamera icon"
               />
-              <h3 class="feedback-list__title">Creative Direction</h3>
-              <p class="feedback-list__text">
+              <h3 class="feedbacks__title">Creative Direction</h3>
+              <p class="feedbacks__text">
                 Every single project is managed by a highly skilled and
                 experienced Creative Director to ensure a great concept, quality
                 and timely delivery.
               </p>
             </li>
-            <li class="feedback-list__card">
+            <li class="feedbacks__card">
               <img
-                class="feedback-list__img"
+                class="feedbacks__img"
                 src="/img/calendar.svg"
                 alt="calendar ico"
               />
-              <h3 class="feedback-list__title">On Time Delivery</h3>
-              <p class="feedback-list__text">
+              <h3 class="feedbacks__title">On Time Delivery</h3>
+              <p class="feedbacks__text">
                 We use advanced project planning software to ensure that you get
                 your video delivered in the time committed by us.
               </p>
             </li>
           </ul>
-          <div class="feedback__selectors">
-            <label class="feedback__label">
+          <div class="feedback__selectors selectors">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select card</span>
               <input
                 type="radio"
-                class="feedback__selector"
+                class="selectors__radio"
                 name="selector-of-feedback"
               />
               <span></span>
             </label>
-            <label class="feedback__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select card</span>
               <input
                 type="radio"
-                class="feedback__selector"
+                class="selectors__radio"
                 name="selector-of-feedback"
               />
               <span></span>
             </label>
-            <label class="feedback__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select card</span>
               <input
                 type="radio"
-                class="feedback__selector"
+                class="selectors__radio"
                 name="selector-of-feedback"
               />
               <span></span>
             </label>
-            <label class="feedback__label">
+            <label class="selectors__label">
               <span class="visually-hidden"> Select card</span>
               <input
                 type="radio"
-                class="feedback__selector"
+                class="selectors__radio"
                 name="selector-of-feedback"
               />
               <span></span>
@@ -827,7 +829,7 @@
               <p class="review-card__post">Local Guide</p>
             </li>
           </ul>
-          <div class="review__arrows">
+          <div class="reviews__arrows">
             <button class="reviews__arrow">
               <img
                 class="reviews__img"

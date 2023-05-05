@@ -46,22 +46,3 @@
     display: none;
   }
 }
-.clients__label {
-  margin-left: 1rem;
-  display: inline-flex;
-  &:nth-child(1) {
-    margin: 0;
-  }
-}
-.clients__selector:checked + span {
-  background-color: #ef5537;
-}
-.clients__selector + span {
-  flex: 0 0 1rem;
-  height: 1rem;
-  background-color: #cacaca;
-  border-radius: 50%;
-}
-.clients__selector {
-  display: none;
-}

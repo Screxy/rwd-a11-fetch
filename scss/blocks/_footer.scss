@@ -40,17 +40,18 @@
 .footer__copyright {
   @include footerCopy();
   margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
   @include media(min, xl) {
     margin-top: auto;
     grid-row: 2/3;
     font-weight: 400;
-
   }
 }
 .footer__rights {
   @include footerCopy();
   line-height: 2rem;
   color: color(secondDescColor);
+  margin-bottom: 0.5rem;
   @include media(min, xl) {
     margin-top: auto;
     grid-column-end: -1;

@@ -2,7 +2,7 @@
 @use "../utils/variables" as *;
 @use "../utils/function" as *;
 
-.nav__list {
+.navigation__list {
   position: absolute;
   width: 100%;
   background-color: #fff;
@@ -13,24 +13,24 @@
     align-items: center;
   }
 }
-.nav__list_active {
+.navigation__list_active {
   overflow: hidden;
   display: block;
 }
-.nav__item:nth-last-child(1) {
+.navigation__item:nth-last-child(1) {
   @include linkBtn();
   border-radius: 20rem;
   margin: 0;
-  &>.nav__link{
+  &>.navigation__link{
       color: color(secondDescColor);
   }
 }
-.nav__item + .nav__item{
+.navigation__item + .navigation__item{
     @include media(min, xl){
         margin-left: 2rem;
     }
 }
-.nav__link {
+.navigation__link {
   @include desc();
   color: color(secondTitleColor);
   text-decoration: none;

@@ -12,8 +12,8 @@
 @use "./blocks/description";
 @use "./blocks/examples-card";
 @use "./blocks/examples";
-@use "./blocks/feedback-list";
 @use "./blocks/feedback";
+@use "./blocks/feedbacks";
 @use "./blocks/footer";
 @use "./blocks/form";
 @use "./blocks/gallery-list";
@@ -28,4 +28,5 @@
 @use "./blocks/home-img";
 @use "./blocks/tel";
 @use "./blocks/email";
-@use './blocks/nav';
+@use "./blocks/selectors";
+@use "./blocks/navigation";

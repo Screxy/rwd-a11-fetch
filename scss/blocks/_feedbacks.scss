@@ -2,16 +2,16 @@
 @use "../utils/variables" as *;
 @use "../utils/function" as *;
 
-.feedback-list {
+.feedbacks {
   display: flex;
   margin-top: 6rem;
   gap: 1.8rem;
   padding-top: 4rem;
 }
-.feedback-list__img {
+.feedbacks__img {
   fill: color(subtitleColor)
 }
-.feedback-list__card {
+.feedbacks__card {
   border: 1.5px solid #ebebeb;
   border-radius: 7px;
   padding: 2rem;
@@ -21,30 +21,30 @@
     display: block;
     &:nth-child(1) {
       background-color: color(subtitleColor);
-      & > .feedback-list__title {
+      & > .feedbacks__title {
         color: color(secondDescColor);
       }
-      & > .feedback-list__text {
+      & > .feedbacks__text {
         color: color(secondDescColor);
       }
-      & > .feedback-list__img {
+      & > .feedbacks__img {
         fill: color(secondDescColor);
       }
     }
   }
 }
-.feedback-list__card + .feedback-list__card{
+.feedbacks__card + .feedbacks__card{
   display: none;
   @include media(min, xl) {
     display: block;
   }
 }
-.feedback-list__title {
+.feedbacks__title {
   @include secondTitle();
   text-align: left;
   margin-top: 2rem;
 }
-.feedback-list__text {
+.feedbacks__text {
   @include desc();
   text-align: left;
   margin-top: 1rem;

@@ -24,6 +24,7 @@
   z-index: 1;
 }
 .header__burger {
+  margin-left: auto;
   @include media(min, xl) {
     display: none;
   }
