@@ -3,8 +3,8 @@
 @use "../utils/function" as *;
 
 
-.review-card {
-}
+// .review-card {
+// }
 .review-card__quotes {
   display: none;
   @include media(min,xl){
