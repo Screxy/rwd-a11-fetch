@@ -8,14 +8,15 @@
   padding: 0 1rem;
   @include media(min, xs) {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 .5rem;
   }
   @include media(min, sm) {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 .5rem;
   }
   @include media(min, xl) {
     max-width: 120rem;
+    padding: 0 .5rem;
   }
 }
 

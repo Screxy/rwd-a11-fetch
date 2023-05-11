@@ -1,3 +1,7 @@
-.logo{
-    
+@use "../utils/mixin" as *;
+.logo {
+  width: 150px;
+  @include media(min, xl) {
+    width: 200px;
+  }
 }

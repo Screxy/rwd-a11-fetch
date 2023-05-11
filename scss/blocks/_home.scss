@@ -39,7 +39,7 @@
 .home__form {
   @include media(min, xl) {
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 150px;
     width: 42rem;
   }

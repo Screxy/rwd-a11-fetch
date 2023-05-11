@@ -354,18 +354,19 @@ html {
 @media only screen and (min-width: 390px) {
   .header__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .header__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .header__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -402,18 +403,19 @@ html {
 @media only screen and (min-width: 390px) {
   .home__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .home__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .home__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -451,7 +453,7 @@ html {
 @media only screen and (min-width: 1200px) {
   .home__form {
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 150px;
     width: 42rem;
   }
@@ -472,18 +474,19 @@ html {
 @media only screen and (min-width: 390px) {
   .clients__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .clients__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .clients__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -668,18 +671,19 @@ html {
 @media only screen and (min-width: 390px) {
   .description__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .description__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .description__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -843,18 +847,19 @@ html {
 @media only screen and (min-width: 390px) {
   .examples__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .examples__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .examples__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -900,18 +905,19 @@ html {
 @media only screen and (min-width: 390px) {
   .feedback__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .feedback__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .feedback__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -1068,18 +1074,19 @@ html {
 @media only screen and (min-width: 390px) {
   .footer__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .footer__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .footer__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1297,6 +1304,15 @@ html {
   text-decoration: none;
 }
 
+.logo {
+  width: 150px;
+}
+@media only screen and (min-width: 1200px) {
+  .logo {
+    width: 200px;
+  }
+}
+
 .industries__title {
   font-weight: 600;
   font-size: 2rem;
@@ -1339,18 +1355,19 @@ html {
 @media only screen and (min-width: 390px) {
   .portfolio__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .portfolio__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .portfolio__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -1446,18 +1463,19 @@ html {
 @media only screen and (min-width: 390px) {
   .reviews__wrapper {
     min-width: 39rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .reviews__wrapper {
     min-width: 57.6rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .reviews__wrapper {
     max-width: 120rem;
+    padding: 0 0.5rem;
   }
 }
 

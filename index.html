@@ -11,24 +11,14 @@
     <header class="header">
       <div class="header__wrapper">
         <a href="/index.html" class="header__link">
-          <picture>
-            <source
-              srcset="/img/main-logo-Dekstop.png"
-              media="(min-width: 1200px)"
-              type="image/png"
-            />
-            <source
-              srcset="/img/main-logo.png"
-              media="(min-width: 390px)"
-              type="image/png"
-            />
-            <img
-              class="header__logo logo"
-              src="/img/main-logo-Dekstop.png"
-              alt="Mystery Monks logo"
-              width="200"
-            />
-          </picture>
+          <img
+            class="header__logo logo"
+            src="/img/main-logo-Dekstop.png"
+            alt="Mystery Monks logo"
+            width="200"
+            sizes="(min-width: 1200px) 200w, (min-width: 390px) 150w"
+            srcset="/img/main-logo-Dekstop.png 1200w, /img/main-logo.png 390w"
+          />
         </a>
         <svg
           class="header__burger"
@@ -95,32 +85,35 @@
             According to Forbes, a Video can boost conversion rate by 80%, and
             grow revenue by average 49%.
           </p>
-          <picture>
-            <source
-              srcset="/img/home-main-desktop.jpg"
-              media="(min-width: 1200px)"
-              type="image/png"
-            />
-            <source
-              srcset="/img/home-main.jpg"
-              media="(min-width: 390px)"
-              type="image/png"
-            />
-            <img
-              class="home__image"
-              src="/img/home-main-desktop.jpg"
-              alt="Illustration of a woman"
-            />
-          </picture>
-          <!-- <img
+          <div class="home__img">
+            <picture>
+              <source
+                srcset="/img/home-main-desktop.jpg"
+                media="(min-width: 1200px)"
+                type="image/png"
+              />
+              <source
+                srcset="/img/home-main.jpg"
+                media="(min-width: 390px)"
+                type="image/png"
+              />
+              <img
+                class="home__image"
+                src="/img/home-main-desktop.jpg"
+                alt="Illustration of a woman"
+              />
+            </picture>
+            <!-- <img
               src="/img/baseline-play-arrow.svg"
               alt="play"
               class="home-img__play-img"
             /> -->
+          </div>
           <form action="#" class="home__form form">
             <h3 class="form__title">Speak to our Video Experts</h3>
             <label class="form__label">
               <span class="visually-hidden">Enter your name</span>
+
               <input type="text" class="form__name" placeholder="First Name" />
             </label>
 
@@ -137,7 +130,7 @@
               <span class="visually-hidden">Enter your Email</span>
 
               <input
-                type="email"
+                type="text"
                 class="form__email"
                 placeholder="Email Address"
               />
@@ -146,7 +139,7 @@
               <span class="visually-hidden">Enter your phone number</span>
 
               <input
-                type="tel"
+                type="text"
                 class="form__number"
                 placeholder="Phone number"
               />
@@ -337,7 +330,7 @@
                   name="selector-of-portfolio"
                   checked
                 />
-                <span>All</span>
+                <span> All </span>
               </label>
               <label class="gallery__label">
                 <input
@@ -345,7 +338,7 @@
                   class="gallery__selector"
                   name="selector-of-portfolio"
                 />
-                <span>Finance</span>
+                <span> Finance</span>
               </label>
               <label class="gallery__label">
                 <input
@@ -353,7 +346,7 @@
                   class="gallery__selector"
                   name="selector-of-portfolio"
                 />
-                <span>Technology</span>
+                <span> Technology</span>
               </label>
               <label class="gallery__label">
                 <input
