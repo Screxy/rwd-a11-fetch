@@ -1,0 +1,41 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/function" as *;
+
+.examples-card {
+  padding-bottom: 0.3rem;
+  @include media(min,xl){
+    display: flex;
+    gap: 8rem;
+    &:nth-child(2n-1){
+      flex-direction: row-reverse;
+    }
+    &>picture{
+      flex-shrink: 0;
+    }
+  }
+}
+.examples-card__img {
+  width: 100%;
+}
+.examples-card__title {
+  @include secondTitle();
+  line-height: 2.7rem;
+  margin-top: 4rem;
+  letter-spacing: -0.1296rem;
+  @include media(min,xl){
+    margin: 0;
+  }
+}
+.examples-card__desc {
+  @include desc();
+  margin-top: 1.2rem;
+  line-height: 2.7rem;
+  letter-spacing: -0.034rem;
+}
+.examples-card__link {
+  @include linkBtn();
+  @include media(min,xl){
+    margin-top: 1.5rem;
+  }
+}

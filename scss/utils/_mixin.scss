@@ -1,0 +1,122 @@
+@use "function" as *;
+@use "variables" as *;
+
+@mixin wrapper($display: flex, $maxwidth: 32rem) {
+  display: $display;
+  max-width: $maxwidth;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include media(min, xs) {
+    min-width: 39rem;
+    padding: 0 .5rem;
+  }
+  @include media(min, sm) {
+    min-width: 57.6rem;
+    padding: 0 .5rem;
+  }
+  @include media(min, xl) {
+    max-width: 120rem;
+    padding: 0 .5rem;
+  }
+}
+
+@mixin title() {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: color(primaryTitleColor);
+  text-align: center;
+  @media (min-width: 1200px) {
+    font-size: 4.6rem;
+    line-height: 6.3rem;
+  }
+}
+@mixin subTitle() {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: color(subtitleColor);
+  text-align: center;
+  @media (min-width: 1200px) {
+    margin-top: 0.8rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+
+@mixin secondTitle() {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: color(secondTitleColor);
+  @include media(min, xl) {
+    font-size: 4rem;
+    line-height: 5.4rem;
+  }
+}
+
+@mixin desc() {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: color(primaryDescColor);
+}
+@mixin linkBtn() {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  background: color(primaryTitleColor);
+  border-radius: 8px;
+  color: color(secondDescColor);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+@mixin footerTitle() {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: color(secondDescColor);
+}
+@mixin footerText() {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: color(footerTextColor);
+  &:hover {
+    color: color(primaryTitleColor);
+  }
+}
+@mixin footerCopy() {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: color(footerTextColor);
+}
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media only screen and (#{$minmax}-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}
+@mixin FormInput() {
+  width: 100%;
+  background-color: color(secondTitleColor);
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 1.4rem 0;
+  color: color(secondDescColor);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: color(secondDescColor);
+  }
+}

@@ -1,0 +1,31 @@
+@use "../utils/mixin.scss" as *;
+@use "../utils/function" as *;
+
+.header {
+  margin-top: 2.7rem;
+  @media (min-width: 1200px) {
+    margin-top: 2rem;
+    padding: 2rem 0;
+  }
+}
+.header__wrapper {
+  @include wrapper();
+  padding: 0 1.5rem;
+  justify-content: space-between;
+}
+// .header__link {
+
+// }
+.header__logo {
+  width: 100%;
+}
+.header__nav {
+  position: relative;
+  z-index: 1;
+}
+.header__burger {
+  margin-left: auto;
+  @include media(min, xl) {
+    display: none;
+  }
+}

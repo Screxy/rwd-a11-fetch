@@ -1,0 +1,40 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/function" as *;
+
+.descriptions{
+  display: flex;
+  gap: 11rem;
+}
+
+.descriptions__item{
+  display: flex;
+  flex-direction: column;
+}
+.descriptions__item:nth-child(n+2){
+  display: none;
+  @include media(min,xl){
+    display: flex;
+  }
+}
+.descriptions__count {
+  margin: 2rem auto;
+
+  font-weight: 600;
+  font-size: 8rem;
+  line-height: 10.9rem;
+  color: color(subtitleColor);
+  text-align: center;
+}
+.descriptions__title {
+  @include secondTitle();
+  text-align: center;
+  line-height: 2.4rem;
+}
+.descriptions__text {
+  @include desc();
+  margin-top: 2rem;
+  text-align: center;
+}
+// .description__label {
+// }

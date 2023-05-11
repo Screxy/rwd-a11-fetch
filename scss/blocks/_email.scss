@@ -1,0 +1,13 @@
+@use "../utils/mixin" as *;
+// .email {
+// }
+.email__title {
+  @include footerTitle();
+}
+.email__link {
+  @include footerText();
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-decoration: none;
+}

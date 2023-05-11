@@ -1,0 +1,38 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/function" as *;
+
+.navigation__list {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+  @include media(min,xl) {
+    display: flex;
+    position: static;
+    align-items: center;
+  }
+}
+.navigation__list_active {
+  overflow: hidden;
+  display: block;
+}
+.navigation__item:nth-last-child(1) {
+  @include linkBtn();
+  border-radius: 20rem;
+  margin: 0;
+  &>.navigation__link{
+      color: color(secondDescColor);
+  }
+}
+.navigation__item + .navigation__item{
+    @include media(min, xl){
+        margin-left: 2rem;
+    }
+}
+.navigation__link {
+  @include desc();
+  color: color(secondTitleColor);
+  text-decoration: none;
+  right: 0;
+}

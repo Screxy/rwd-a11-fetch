@@ -1,0 +1,52 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+@use "../utils/function" as *;
+
+.gallery {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.gallery__label > span {
+  @include footerText();
+  color: color(primaryDescColor);
+  @include media(min, xl) {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+.gallery__selectors {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+.gallery__selector:checked + span {
+  color: color(subtitleColor);
+
+  border-bottom: 1.5px solid color(subtitleColor);
+}
+.gallery__selector {
+  display: none;
+}
+.gallery__list {
+  margin-top: 4rem;
+  @include media(min, xl) {
+    margin-top: 4.5rem;
+  }
+}
+.gallery__link {
+  margin: 4rem auto 0;
+  padding: 1rem 4rem;
+
+  border: 0.1rem solid #ef5537;
+  border-radius: 20rem;
+
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  color: color(primaryTitleColor);
+
+  text-decoration: none;
+}

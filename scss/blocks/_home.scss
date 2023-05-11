@@ -1,0 +1,46 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/function" as *;
+
+.home {
+  margin-top: 3.5rem;
+}
+.home__wrapper {
+  @include wrapper();
+  flex-direction: column;
+  position: relative;
+}
+.home__title {
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  @include media(min, xl) {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    text-align: center;
+  }
+}
+.orange {
+  color: color(primaryTitleColor);
+}
+.home__text {
+  margin-top: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  @include media(min, xl) {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+  }
+}
+// .home__img {
+// }
+.home__form {
+  @include media(min, xl) {
+    position: absolute;
+    right: 20px;
+    bottom: 150px;
+    width: 42rem;
+  }
+}

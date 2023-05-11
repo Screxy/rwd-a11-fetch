@@ -1,0 +1,48 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/function" as *;
+
+.clients {
+  margin-top: 4rem;
+}
+.clients__wrapper {
+  @include wrapper();
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.clients__title {
+  @include title();
+}
+.clients__text {
+  @include subTitle();
+  margin-top: 0.5rem;
+}
+.clients__company {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around;
+  @include media(min, xl) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.clients__logo:nth-child(n + 4) {
+  display: none;
+  @include media(min, xl) {
+    display: block;
+  }
+}
+// .clients__img {
+// }
+.clients__selectors {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 1rem auto 0;
+
+  width: max-content;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}

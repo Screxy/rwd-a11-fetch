@@ -1,0 +1,26 @@
+@use "../utils/mixin" as *;
+.examples {
+  margin-top: 4rem;
+  background-color: #f5f5f5;
+  @include media(min,xl){
+    padding-bottom: 7rem;
+  }
+}
+.examples__wrapper {
+  @include wrapper();
+  flex-direction: column;
+}
+.examples__title {
+  @include title();
+
+  margin-top: 1rem;
+}
+.examples__list {
+  margin-top: 4rem;
+}
+.examples__card:nth-child(n + 2) {
+  margin-top: 5rem;
+  @include media(min,xl){
+    margin-top: 10rem;
+  }
+}

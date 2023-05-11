@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Mystery Monks</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html" class="header__link">
+          <img
+            class="header__logo logo"
+            src="/img/main-logo-Dekstop.png"
+            alt="Mystery Monks logo"
+            width="200"
+            sizes="(min-width: 1200px) 200w, (min-width: 390px) 150w"
+            srcset="/img/main-logo-Dekstop.png 1200w, /img/main-logo.png 390w"
+          />
+        </a>
+        <svg
+          class="header__burger"
+          width="20"
+          height="27"
+          viewBox="0 0 20 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="5" width="20" height="4" rx="2" fill="#EF5537" />
+          <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" />
+          <rect y="23" width="20" height="4" rx="2" fill="#EF5537" />
+        </svg>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#home-section" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#clients-section" class="navigation__link">Our Client</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#portfolio-section" class="navigation__link"
+                >Our Portfolio</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#description-section" class="navigation__link"
+                >About Us</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#feedback-section" class="navigation__link">Why us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#examples-section" class="navigation__link"
+                >Types of videos</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#reviews-section" class="navigation__link">Reviews</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"
+                ><img
+                  src="/img/Lightning.svg"
+                  alt="Lightning icon"
+                  class="navigation__img"
+                />Get a Quote</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home-section" class="home">
+        <div class="home__wrapper">
+          <h1 class="home__title">
+            Best <span class="orange">Animation</span> &
+            <span class="orange">Video</span> Production Company
+          </h1>
+          <p class="home__text">
+            According to Forbes, a Video can boost conversion rate by 80%, and
+            grow revenue by average 49%.
+          </p>
+          <div class="home__img">
+            <picture>
+              <source
+                srcset="/img/home-main-desktop.jpg"
+                media="(min-width: 1200px)"
+                type="image/png"
+              />
+              <source
+                srcset="/img/home-main.jpg"
+                media="(min-width: 390px)"
+                type="image/png"
+              />
+              <img
+                class="home__image"
+                src="/img/home-main-desktop.jpg"
+                alt="Illustration of a woman"
+              />
+            </picture>
+            <!-- <img
+              src="/img/baseline-play-arrow.svg"
+              alt="play"
+              class="home-img__play-img"
+            /> -->
+          </div>
+          <form action="#" class="home__form form">
+            <h3 class="form__title">Speak to our Video Experts</h3>
+            <label class="form__label">
+              <span class="visually-hidden">Enter your name</span>
+
+              <input type="text" class="form__name" placeholder="First Name" />
+            </label>
+
+            <label class="form__label">
+              <span class="visually-hidden">Enter your surname</span>
+              <input
+                type="text"
+                class="form__surname"
+                placeholder="Last Name"
+              />
+            </label>
+
+            <label class="form__label">
+              <span class="visually-hidden">Enter your Email</span>
+
+              <input
+                type="text"
+                class="form__email"
+                placeholder="Email Address"
+              />
+            </label>
+            <label class="form__label">
+              <span class="visually-hidden">Enter your phone number</span>
+
+              <input
+                type="text"
+                class="form__number"
+                placeholder="Phone number"
+              />
+            </label>
+            <label class="form__label">
+              <span class="visually-hidden">Enter your requirement</span>
+
+              <textarea
+                name="requirement"
+                cols="30"
+                rows="10"
+                class="form__requirement"
+                placeholder="Requirement"
+              ></textarea>
+            </label>
+            <button type="submit" class="form__submit">
+              Get Info & Pricing
+            </button>
+          </form>
+        </div>
+      </section>
+      <section id="clients-section" class="clients">
+        <div class="clients__wrapper">
+          <h2 class="clients__title">Our Clients</h2>
+          <p class="clients__text">You might have heard of them</p>
+          <ul class="clients__company">
+            <li class="clients__logo">
+              <picture>
+                <source
+                  srcset="/img/samsung-logo-desktop.png"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="/img/samsung-logo.png"
+                  media="(min-width: 390px)"
+                  type="image/png"
+                />
+                <img
+                  src="/img/samsung-logo.png"
+                  alt="Samsung logo"
+                  class="clients__img"
+                />
+              </picture>
+            </li>
+            <li class="clients__logo">
+              <picture>
+                <source
+                  srcset="/img/viacom-logo-desktop.png"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="/img/viacom-logo.png"
+                  media="(min-width: 390px)"
+                  type="image/png"
+                />
+                <img
+                  src="/img/viacom-logo.png"
+                  alt="Viacom logo"
+                  class="clients__img"
+                />
+              </picture>
+            </li>
+            <li class="clients__logo">
+              <picture>
+                <source
+                  srcset="/img/accenture-logo-desktop.png"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="/img/accenture-logo.png"
+                  media="(min-width: 390px)"
+                  type="image/png"
+                />
+                <img
+                  src="/img/accenture-logo.png"
+                  alt="Accenture logo"
+                  class="clients__img"
+                />
+              </picture>
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/honeywell-logo.png"
+                alt="Honeywell logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/bajaj-logo.png"
+                alt="Bajaj logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/tata-logo.png"
+                alt="Tata logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/affle-logo.png"
+                alt="Affle logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/bain-logo.png"
+                alt="Bain logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/tibco-logo.png"
+                alt="Tibco logo"
+              />
+            </li>
+            <li class="clients__logo">
+              <img
+                class="clients__img"
+                src="/img/tally-logo.png"
+                alt="Tally logo"
+              />
+            </li>
+          </ul>
+          <div class="clients__selectors selectors">
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select image </span>
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-company"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select image</span>
+
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-company"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select image</span>
+
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-company"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select image</span>
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-company"
+              />
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio-section" class="portfolio">
+        <div class="portfolio__wrapper">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <p class="portfolio__text">
+            Explore some of the work we`re especially proud of.
+          </p>
+          <div class="portfolio__gallery gallery">
+            <div class="gallery__selectors">
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                  checked
+                />
+                <span> All </span>
+              </label>
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                />
+                <span> Finance</span>
+              </label>
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                />
+                <span> Technology</span>
+              </label>
+              <label class="gallery__label">
+                <input
+                  type="radio"
+                  class="gallery__selector"
+                  name="selector-of-portfolio"
+                />
+                <span> Education</span>
+              </label>
+            </div>
+            <ul class="gallery__list gallery-list">
+              <li class="gallery-list__item">
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-lucy-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-lucy.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-lucy.jpg"
+                    alt="lucy"
+                  />
+                </picture>
+              </li>
+              <li class="gallery-list__item">
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-women-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-women.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-women.jpg"
+                    alt="women"
+                  />
+                </picture>
+              </li>
+              <li class="gallery-list__item">
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-men-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-men.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-men-desktop.jpg"
+                    alt="men"
+                  />
+                </picture>
+              </li>
+              <li class="gallery-list__item">
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-speaker-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-speaker.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-speaker.jpg"
+                    alt="speaker"
+                  />
+                </picture>
+              </li>
+              <li class="gallery-list__item">
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-cityes-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-cityes.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-cityes.jpg"
+                    alt="cityes"
+                  />
+                </picture>
+              </li>
+              <li class="gallery-list__item">
+                <picture>
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-girls-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    class="gallery-list__img"
+                    srcset="/img/gallery-girls.jpg"
+                    media="(min-width: 390px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="gallery-list__img"
+                    src="/img/gallery-girls.jpg"
+                    alt="girls"
+                  />
+                </picture>
+              </li>
+            </ul>
+            <a class="gallery__link" href="#">Show More</a>
+          </div>
+        </div>
+      </section>
+      <section id="description-section" class="description">
+        <div class="description__wrapper">
+          <h2 class="description__title">About Us</h2>
+          <p class="description__text">About Our Video Creation Company!</p>
+          <ul class="description__list descriptions">
+            <li class="descriptions__item">
+              <span class="descriptions__count">2000<sup>+</sup></span>
+              <h3 class="descriptions__title">Clients Served</h3>
+              <p class="descriptions__text">
+                We`ve been doing this for years and will be doing it for many
+                more! Our client count has touched the 2k bar and continues to
+                grow with uninterrupted momentum!
+              </p>
+            </li>
+            <li class="descriptions__item">
+              <span class="descriptions__count">17<sup>+</sup></span>
+              <h3 class="descriptions__title">Clients Served</h3>
+              <p class="descriptions__text">
+                Not one, not two….we`ve gone global exorbitantly! We`ve served
+                more than 7 countries and are excited to add new names to our
+                list!
+              </p>
+            </li>
+            <li class="descriptions__item">
+              <span class="descriptions__count">10<sup>+</sup></span>
+              <h3 class="descriptions__title">Clients Served</h3>
+              <p class="descriptions__text">
+                Yes! We`re the Jack of all trades and masters of all as well!
+                With over 10 video styles mastered, we can guarantee perfection,
+                elegance and sharpness in our video production services!
+              </p>
+            </li>
+            <li class="descriptions__item">
+              <span class="descriptions__count">98<sup>%</sup></span>
+              <h3 class="descriptions__title">Clients Served</h3>
+              <p class="descriptions__text">
+                Don`t trust us? Well...trust the ones who we`ve worked for. A
+                whooping 98% satisfaction ratio says it all!
+              </p>
+            </li>
+          </ul>
+          <div class="description__selectors selectors">
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select image</span>
+              <input
+                class="selectors__radio"
+                type="radio"
+                name="description-card-selector"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select image</span>
+              <input
+                class="selectors__radio"
+                type="radio"
+                name="description-card-selector"
+              />
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section id="feedback-section" class="feedback">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__title">Why us?</h2>
+          <p class="feedback__text">
+            Why Choose Mystery Monks As Your Video Production and Animation
+            Company?
+          </p>
+          <ul class="feedback__feedbacks feedbacks">
+            <li class="feedbacks__card">
+              <svg
+                class="feedbacks__img"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.6055 3.0918C33.1445 3.59961 34.7949 6.07031 34.2871 8.60938L34.0625 9.72266C33.5449 12.3301 32.5879 14.8105 31.25 17.0664H45.3125C47.9004 17.0664 50 19.166 50 21.7539C50 23.5605 48.9746 25.1328 47.4707 25.9141C48.5352 26.7734 49.2188 28.0918 49.2188 29.5664C49.2188 31.8516 47.5781 33.7559 45.4199 34.166C45.8496 34.8789 46.0938 35.709 46.0938 36.5977C46.0938 38.6777 44.7363 40.4453 42.8613 41.0508C42.9297 41.373 42.9688 41.7148 42.9688 42.0664C42.9688 44.6543 40.8691 46.7539 38.2812 46.7539H28.7598C26.9043 46.7539 25.0977 46.207 23.5547 45.1816L19.7949 42.6719C17.1875 40.9336 15.625 38.0039 15.625 34.8691V31.1289V26.4414V24.0098C15.625 21.1582 16.9238 18.4727 19.1406 16.6855L19.8633 16.1094C22.4512 14.0391 24.2188 11.1289 24.8633 7.88672L25.0879 6.77344C25.5957 4.23437 28.0664 2.58398 30.6055 3.0918ZM3.125 18.6289H9.375C11.1035 18.6289 12.5 20.0254 12.5 21.7539V43.6289C12.5 45.3574 11.1035 46.7539 9.375 46.7539H3.125C1.39648 46.7539 0 45.3574 0 43.6289V21.7539C0 20.0254 1.39648 18.6289 3.125 18.6289Z"
+                />
+              </svg>
+              <h3 class="feedbacks__title">Error Free Delivery</h3>
+              <p class="feedbacks__text">
+                Our Creative Directors ensure thorough quality checks before any
+                deliverable (script, voice over, renders, animation, etc.) goes
+                out to you.
+              </p>
+            </li>
+            <li class="feedbacks__card">
+              <img
+                class="feedbacks__img"
+                src="/img/cubes-solid.svg"
+                alt="cubes icon"
+              />
+              <h3 class="feedbacks__title">All Inclusive Packages</h3>
+              <p class="feedbacks__text">
+                Our packages include an end to end service which means a client
+                only needs to tell us about their product/service and our team
+                takes care of the rest.
+              </p>
+            </li>
+            <li class="feedbacks__card">
+              <img
+                class="feedbacks__img"
+                src="/img/video-solid.svg"
+                alt="videocamera icon"
+              />
+              <h3 class="feedbacks__title">Creative Direction</h3>
+              <p class="feedbacks__text">
+                Every single project is managed by a highly skilled and
+                experienced Creative Director to ensure a great concept, quality
+                and timely delivery.
+              </p>
+            </li>
+            <li class="feedbacks__card">
+              <img
+                class="feedbacks__img"
+                src="/img/calendar.svg"
+                alt="calendar ico"
+              />
+              <h3 class="feedbacks__title">On Time Delivery</h3>
+              <p class="feedbacks__text">
+                We use advanced project planning software to ensure that you get
+                your video delivered in the time committed by us.
+              </p>
+            </li>
+          </ul>
+          <div class="feedback__selectors selectors">
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select card</span>
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-feedback"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select card</span>
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-feedback"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select card</span>
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-feedback"
+              />
+              <span></span>
+            </label>
+            <label class="selectors__label">
+              <span class="visually-hidden"> Select card</span>
+              <input
+                type="radio"
+                class="selectors__radio"
+                name="selector-of-feedback"
+              />
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section id="examples-section" class="examples">
+        <div class="examples__wrapper">
+          <h2 class="examples__title">Types of Videos</h2>
+          <ul class="examples__list">
+            <li class="examples__card examples-card">
+              <picture>
+                <source
+                  class="examples-card__img"
+                  srcset="/img/animated-explainer-video-desktop.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  class="examples-card__img"
+                  srcset="/img/animated-explainer-video.jpg"
+                  media="(min-width: 390px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="examples-card__img"
+                  src="/img/animated-explainer-video.jpg"
+                  alt="Animated Explainer Video"
+                />
+              </picture>
+              <div class="examples-card__text">
+                <h3 class="examples-card__title">Animated Explainer Video</h3>
+                <p class="examples-card__desc">
+                  It`s about time that we throw out the old ways of
+                  communicating with our prospects. Be it a document, an image
+                  or a presentation….there`s always something amiss. Catch up
+                  with the current era! Animated explainer videos not only get
+                  your brand message across, but also give the extra little push
+                  to convert a maybe to a definite yes! Be it a 2D or a 3D video
+                  produced by our explainer video company, the ensemble of
+                  attractive visuals, a breathtaking voice over with a mind
+                  blowing concept is unbeatable!
+                </p>
+                <a href="#" class="examples-card__link">Get a Quote</a>
+              </div>
+            </li>
+            <li class="examples__card examples-card">
+              <picture>
+                <source
+                  class="examples-card__img"
+                  srcset="/img/product-explainer-video-desktop2.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  class="examples-card__img"
+                  srcset="/img/product-explainer-video.jpg"
+                  media="(min-width: 390px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="examples-card__img"
+                  src="/img/product-explainer-video.jpg"
+                  alt="Product Explainer Video"
+                />
+              </picture>
+              <div class="examples-card__text">
+                <h3 class="examples-card__title">Product Explainer Video</h3>
+                <p class="examples-card__desc">
+                  What influences people to buy one product but not the other?
+                  Is it its composition, its features...or maybe its appearance?
+                  We as a explainer video company think how you market your
+                  product is what determines how well it sells. And a 2D or 3D
+                  product explainer video showcasing your product`s features,
+                  appearance and composition can build your sales from level
+                  zero to infinity. Don`t just advertise for the sake of doing
+                  it….be a pro with a unique product explainer video!
+                </p>
+                <a href="#" class="examples-card__link">Get a Quote</a>
+              </div>
+            </li>
+            <li class="examples__card examples-card">
+              <picture>
+                <source
+                  class="examples-card__img"
+                  srcset="/img/whiteboard-explainer-video-desktop.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  class="examples-card__img"
+                  srcset="/img/whiteboard-explainer-video.jpg"
+                  media="(min-width: 390px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="examples-card__img"
+                  src="/img/whiteboard-explainer-video-.jpg"
+                  alt="Whiteboard Explainer Video"
+                />
+              </picture>
+              <div class="examples-card__text">
+                <h3 class="examples-card__title">Whiteboard Explainer Video</h3>
+                <p class="examples-card__desc">
+                  Keep it simple. Whiteboard explainer videos give your audience
+                  a ride back through Nostalgia lane. Remember how your teacher
+                  could solve a complex Physics equation on the board and make
+                  it look so simple? Well a whiteboard explainer video does the
+                  same for your business. Get your brand message across in the
+                  most understandable way possible. And enjoy the topping of
+                  mouthwatering swiftness and eye-catching visuals! Your next
+                  pit stop should definitely be our explainer video company!
+                </p>
+                <a href="#" class="examples-card__link">Get a Quote</a>
+              </div>
+            </li>
+            <li class="examples__card examples-card">
+              <picture>
+                <source
+                  class="examples-card__img"
+                  srcset="/img/live-shoot-desktop2.jpg"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  class="examples-card__img"
+                  srcset="/img/live-shoot.jpg"
+                  media="(min-width: 390px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="examples-card__img"
+                  src="/img/live-shoot.jpg"
+                  alt="Live Shoot"
+                />
+              </picture>
+              <div class="examples-card__text">
+                <h3 class="examples-card__title">Live Shoot</h3>
+                <p class="examples-card__desc">
+                  Impressions are important! And nothing can help you introduce
+                  your brand to the world better than a world-class corporate
+                  video! Pump up the hype, poke at the curiosity and generate a
+                  sense of connection within your masses. How you present
+                  yourself to the world matters….and a perfectly shot video is a
+                  great step to ensure your brand`s success.
+                </p>
+                <a href="#" class="examples-card__link">Get a Quote</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="reviews-section" class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Love From Our Customer</h2>
+          <ul class="reviews__list">
+            <li class="reviews__card review-card">
+              <div class="review-card__text">
+                <img src="/img/quotes.svg" alt="Quotes image" />
+                <article>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus tempus consectetur mi nec hendrerit. Integer id est
+                  massa.”
+                </article>
+              </div>
+              <p class="review-card__name">Vedant Sharma</p>
+              <p class="review-card__post">Local Guide</p>
+            </li>
+          </ul>
+          <div class="reviews__arrows">
+            <button class="reviews__arrow">
+              <img
+                class="reviews__img"
+                src="/img/left-arrow.svg"
+                alt="arrow to left"
+              />
+            </button>
+            <button class="reviews__arrow">
+              <img
+                class="reviews__img"
+                src="/img/right-arrow.svg"
+                alt="arrow to left"
+              />
+            </button>
+          </div>
+          <div class="reviews__target target">
+            <h3 class="target__title">Ready to start your video?</h3>
+            <a href="#" class="target__link">Let`s Talk</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__company company">
+          <h3 class="company__title">Company</h3>
+          <ul class="company__list">
+            <li class="company__item">
+              <a href="#" class="company__link">About us</a>
+            </li>
+            <li class="company__item">
+              <a href="#" class="company__link">Our Work</a>
+            </li>
+            <li class="company__item">
+              <a href="#" class="company__link">Our Blog</a>
+            </li>
+            <li class="company__item">
+              <a href="#" class="company__link">Track Oder</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__industries industries">
+          <h3 class="industries__title">Industries</h3>
+          <ul class="industries__list">
+            <li class="industries__item">
+              <a href="#" class="industries__link">E-Commerce</a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link">Education</a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link">Entertainment</a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Financial Services </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Healthcare </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Information Technology </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link"> Marketing & Advertising </a>
+            </li>
+            <li class="industries__item">
+              <a href="#" class="industries__link">Travel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact contact">
+          <div class="contact__tel tel">
+            <h3 class="tel__title">Phone</h3>
+            <a href="tel:+919643313012" class="tel__link"> +91 9643313012 </a>
+          </div>
+          <div class="contact__email email">
+            <h3 class="email__title">Email</h3>
+            <a href="mailto:sales@mysterymonks.com" class="email__link">
+              sales@mysterymonks.com
+            </a>
+          </div>
+          <div class="contact__socials socials">
+            <h3 class="socials__title">Social</h3>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <span class="visually-hidden">Link to Facebook</span>
+                  <img
+                    class="socials__icon"
+                    src="/img/facebook.svg"
+                    alt="facebook logo"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <span class="visually-hidden">Link to Twitter</span>
+                  <img
+                    class="socials__icon"
+                    src="/img/twitter.svg"
+                    alt="twitter logo"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <span class="visually-hidden">Link to Linkedin</span>
+                  <img
+                    class="socials__icon"
+                    src="/img/linkedin.svg"
+                    alt="linkedin logo"
+                /></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <span class="visually-hidden">Link to Youtube</span>
+                  <img
+                    class="socials__icon"
+                    src="/img/youtube.svg"
+                    alt="youtube logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">Copyright Mysterymonks © 2023</p>
+        <p class="footer__rights">All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

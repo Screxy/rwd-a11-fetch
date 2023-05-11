@@ -1,0 +1,11 @@
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  &.lock {
+    overflow: hidden;
+  }
+}
+html {
+  font-size: 62.5%;
+}

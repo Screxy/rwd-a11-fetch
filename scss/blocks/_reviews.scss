@@ -1,0 +1,51 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/function" as *;
+
+.reviews {
+  margin-top: 4rem;
+  background-image: url(/img/review-background.png);
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 14rem;
+}
+.reviews__wrapper {
+  @include wrapper();
+  flex-direction: column;
+}
+.reviews__title {
+  @include title();
+  @include media(min, xl) {
+    padding: 6rem 0;
+  }
+}
+.reviews__list {
+  margin-top: 4rem;
+}
+.reviews__card {
+}
+.review__arrows {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.reviews__arrow {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 200px;
+  border: none;
+  transition: transform,background-color  .3s;
+  &:hover{
+    background-color: color(primaryTitleColor);
+  }
+  &:active{
+    transform: scale(.9);
+    border: 1px solid color(primaryTitleColor);
+  }
+}
+// .reviews__img {
+// }
+// .reviews__target {
+// }
