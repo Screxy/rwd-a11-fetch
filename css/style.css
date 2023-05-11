@@ -473,6 +473,11 @@ html {
   }
 }
 
+.home__image {
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (min-width: 1200px) {
   .home__form {
     position: absolute;
@@ -562,6 +567,11 @@ html {
   .clients__logo:nth-child(n+4) {
     display: block;
   }
+}
+
+.clients__img {
+  width: auto;
+  height: auto;
 }
 
 .clients__selectors {
@@ -1263,7 +1273,8 @@ html {
 }
 
 .gallery-list__img {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 .gallery {
@@ -1329,6 +1340,7 @@ html {
 
 .logo {
   width: 150px;
+  height: auto;
 }
 @media only screen and (min-width: 1200px) {
   .logo {
