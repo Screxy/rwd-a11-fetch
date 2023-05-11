@@ -1424,6 +1424,15 @@ html {
   }
 }
 
+.review-card__quotes {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .review-card__quotes {
+    display: block;
+  }
+}
+
 .review-card__text {
   display: flex;
   gap: 2rem;

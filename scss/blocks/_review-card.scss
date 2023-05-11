@@ -5,6 +5,12 @@
 
 .review-card {
 }
+.review-card__quotes {
+  display: none;
+  @include media(min,xl){
+    display: block;
+  }
+}
 .review-card__text {
   display: flex;
   gap: 2rem;
