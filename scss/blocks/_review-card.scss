@@ -3,7 +3,11 @@
 @use "../utils/function" as *;
 
 
-.review-card {
+.review-card__quotes {
+  display: none;
+  @include media(min,xl){
+    display: block;
+  }
 }
 .review-card__text {
   display: flex;
@@ -22,7 +26,6 @@
     padding-top: 6rem;
     padding-bottom: 10rem;
     padding-right: 8rem;
-    // text-align: center;
     font-size: 2rem;
   }
 }

@@ -32,8 +32,10 @@
     display: block;
   }
 }
-// .clients__img {
-// }
+.clients__img{
+  width: auto;
+  height: auto;
+}
 .clients__selectors {
   display: flex;
   justify-content: center;

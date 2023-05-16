@@ -1,7 +1,5 @@
 @use "../utils/mixin" as *;
 
-// .company {
-// }
 .company__title {
   @include footerTitle();
 }
@@ -12,8 +10,6 @@
       margin-top: 2rem;
     }
   }
-}
-.company__item {
 }
 .company__link {
   @include footerText();

@@ -1,14 +1,11 @@
 @use "../utils/mixin" as *;
-// .industries {
-// }
+
 .industries__title {
   @include footerTitle();
 }
 .industries__list {
   margin-top: 2.5rem;
 }
-// .industries__item {
-// }
 .industries__link {
   @include footerText();
   text-decoration: none;

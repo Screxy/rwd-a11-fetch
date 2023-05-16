@@ -16,7 +16,8 @@
   }
 }
 .examples-card__img {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 .examples-card__title {
   @include secondTitle();
