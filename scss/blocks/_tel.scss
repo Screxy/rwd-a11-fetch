@@ -1,7 +1,5 @@
 @use "../utils/mixin" as *;
 
-.tel {
-}
 .tel__title {
   @include footerTitle();
 }

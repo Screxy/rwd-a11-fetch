@@ -11,6 +11,7 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
+        <a href="#home-section" class="visually-hidden">Go to content</a>
         <a href="/index.html" class="header__link">
           <img
             class="header__logo logo"
@@ -19,7 +20,12 @@
             width="150"
             height="30"
             sizes="(min-width: 1200px) 200w, (min-width: 390px) 150w"
-            srcset="/img/main-logo-Dekstop.png 1200w, /img/main-logo.png 390w"
+            srcset="
+              /img/main-logo-Dekstop.webp 1200w,
+              /img/main-logo-Dekstop.png  1200w,
+              /img/main-logo.webp          390w,
+              /img/main-logo.png           390w
+            "
           />
         </a>
         <svg
@@ -119,11 +125,6 @@
                 height="210"
               />
             </picture>
-            <!-- <img
-              src="/img/baseline-play-arrow.svg"
-              alt="play"
-              class="home-img__play-img"
-            /> -->
           </div>
           <form action="#" class="home__form form">
             <h2 class="form__title">Speak to our Video Experts</h2>
@@ -251,7 +252,7 @@
             <li class="clients__logo">
               <img
                 class="clients__img"
-                src="/img/bajaj-logo.png"
+                src="/img/bajaj-logo.jpg"
                 alt="Bajaj logo"
                 width="180"
                 height="118"
@@ -269,7 +270,7 @@
             <li class="clients__logo">
               <img
                 class="clients__img"
-                src="/img/affle-logo.png"
+                src="/img/affle-logo.jpg"
                 alt="Affle logo"
                 width="180"
                 height="118"
@@ -278,7 +279,7 @@
             <li class="clients__logo">
               <img
                 class="clients__img"
-                src="/img/bain-logo.png"
+                src="/img/bain-logo.jpg"
                 alt="Bain logo"
                 width="180"
                 height="118"
@@ -316,7 +317,6 @@
             </label>
             <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
-
               <input
                 type="radio"
                 class="selectors__radio"
@@ -326,7 +326,6 @@
             </label>
             <label class="selectors__label">
               <span class="visually-hidden"> Select image</span>
-
               <input
                 type="radio"
                 class="selectors__radio"

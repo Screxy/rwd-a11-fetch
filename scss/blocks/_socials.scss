@@ -1,7 +1,5 @@
 @use "../utils/mixin" as *;
 
-// .socials {
-// }
 .socials__title {
   @include footerTitle();
   margin-top: 2rem;
@@ -11,9 +9,3 @@
   column-gap: 2rem;
   margin-top: 1.5rem;
 }
-// .socials__item {
-// }
-// .socials__link {
-// }
-// .socials__icon {
-// }
