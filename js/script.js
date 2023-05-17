@@ -118,8 +118,9 @@ const message = {
 };
 function showToats() {
   setTimeout(() => {
+    toats.classList.remove("toats_hidden");
     toats.classList.add("toats_active");
-  }, 2000); // Скрыть ошибку через 3 секунды
+  }, 2000);
   const spanItem = document.createElement("span");
   spanItem.innerHTML = `<p class="toats__title" >${message.name} </p> <p class="toats__desc">${message.message} </p>`;
   toats.appendChild(spanItem);
@@ -127,7 +128,7 @@ function showToats() {
 function hideToats(e) {
   if (e.target.closest(".toats__close")) {
     toats.classList.remove("toats_active");
-    toats.classList.add("toats_animate");
+    toats.classList.add("toats_hidden");
   }
 }
 document.addEventListener("DOMContentLoaded", showToats);

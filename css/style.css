@@ -1794,7 +1794,7 @@ html {
 .toats_active {
   display: block;
 }
-.toats_animate {
+.toats_hidden {
   animation: toatsHidden 0.3s forwards;
 }
 
@@ -1804,7 +1804,7 @@ html {
   }
   100% {
     opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 .toats__title {

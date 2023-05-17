@@ -10,7 +10,7 @@
   &_active {
     display: block;
   }
-  &_animate {
+  &_hidden {
     animation: toatsHidden 0.3s forwards;
   }
 }
@@ -20,7 +20,7 @@
   }
   100% {
     opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 .toats__title {
