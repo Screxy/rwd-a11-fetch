@@ -1,14 +1,13 @@
-function AnimationTarget(el, randomX, randomY) {
+function AnimationTarget(el) {
   this.el = el;
-  console.log(randomX, randomY);
   this.animate = function () {
     anime({
       targets: this.el,
-      translateX: randomX,
-      translateY: randomY,
-      scale: (150 +randomY) / 80,
+      translateX: getRandomArbitrary(-210, 210),
+      translateY: getRandomArbitrary(-210, 210),
+      scale: getRandomArbitrary(0.8, 3),
       rotate: "1turn",
-      borderRadius: randomY / 10,
+      borderRadius: getRandomArbitrary(0.8, 3),
       duration: 1000,
       easing: "easeInOutSine",
       complete: function (anim) {
@@ -32,10 +31,6 @@ function getRandomArbitrary(min, max) {
 }
 buttonAnimate.addEventListener("click", () => {
   const elem = createElem(animate);
-  let elemAnim = new AnimationTarget(
-    elem,
-    getRandomArbitrary(-210, 210),
-    getRandomArbitrary(-150, 210)
-  );
+  let elemAnim = new AnimationTarget(elem);
   elemAnim.animate();
 });
