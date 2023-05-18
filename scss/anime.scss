@@ -1,0 +1,28 @@
+@use "./utils/mixin" as *;
+.header {
+  &__wrapper {
+    @include wrapper();
+    justify-content: center
+  }
+}
+.animate {
+  @include wrapper();
+  justify-content: center;
+  &__button{
+    @include linkBtn();
+  }
+  &__block {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: linear-gradient(
+      90deg,
+      rgba(115, 168, 231, 1) 0%,
+      rgba(246, 127, 233, 1) 100%
+    );
+  }
+}
