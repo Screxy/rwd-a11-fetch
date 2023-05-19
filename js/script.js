@@ -1,4 +1,4 @@
-const burger = document.querySelector(".header__burger");
+const burger = document.querySelector(".header__button");
 const burgerMenu = document.querySelector(".navigation__list");
 const body = document.querySelector("body");
 
@@ -24,12 +24,12 @@ burger.addEventListener("click", handleBurgerClick);
 burgerMenu.addEventListener("click", closeBurgerMenu);
 // Задача 1
 const ingredients = {
-  bread: 10,
+  bread: 9,
   cheese: 5,
 };
 
 function countSandwiches(ingredients) {
-  cntBreads = ingredients.bread / 2;
+  cntBreads = Math.floor(ingredients.bread / 2);
   cntCheese = ingredients.cheese;
   return Math.min(cntBreads, cntCheese);
 }

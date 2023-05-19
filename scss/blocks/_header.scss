@@ -21,8 +21,15 @@
   position: relative;
   z-index: 1;
 }
-.header__burger {
+.header__button{
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+  @include media(min, xl) {
+    display: none;
+  }
+}
+.header__burger {
   @include media(min, xl) {
     display: none;
   }

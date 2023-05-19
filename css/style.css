@@ -356,6 +356,20 @@ html {
   font-size: 62.5%;
 }
 
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  background: #F498AD;
+  transform: translateY(-2000px);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .header {
   margin-top: 2.7rem;
 }
@@ -403,9 +417,17 @@ html {
   z-index: 1;
 }
 
-.header__burger {
+.header__button {
   margin-left: auto;
+  border: none;
+  background-color: transparent;
 }
+@media only screen and (min-width: 1200px) {
+  .header__button {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .header__burger {
     display: none;
