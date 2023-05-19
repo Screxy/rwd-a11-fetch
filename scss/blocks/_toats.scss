@@ -1,0 +1,39 @@
+@use "../utils/function" as *;
+@use "../utils/mixin" as *;
+
+.toats {
+  padding: 1rem;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: color(primaryTitleColor);
+  &_active {
+    display: block;
+  }
+  &_hidden {
+    animation: toatsHidden 0.3s forwards;
+  }
+}
+@keyframes toatsHidden {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.toats__title {
+  @include subTitle();
+  color: #fff;
+}
+.toats__desc {
+  @include desc();
+  color: #fff;
+}
+.toats__close {
+  position: absolute;
+  right: 1rem;
+  border: none;
+  border-radius: 50px;
+}

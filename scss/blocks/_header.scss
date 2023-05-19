@@ -1,4 +1,4 @@
-@use "../utils/mixin.scss" as *;
+@use "../utils/mixin" as *;
 @use "../utils/function" as *;
 
 .header {
@@ -12,6 +12,7 @@
   @include wrapper();
   padding: 0 1.5rem;
   justify-content: space-between;
+  position: relative;
 }
 .header__logo {
   width: 100%;
@@ -24,5 +25,32 @@
   margin-left: auto;
   @include media(min, xl) {
     display: none;
+  }
+  &_active {
+    .header__burger-line1 {
+      animation: burger__line1--animation 0.3s forwards;
+    }
+    .header__burger-line2 {
+      animation: burger__line2--animation 0.3s forwards;
+      opacity: 0;
+    }
+    .header__burger-line3 {
+      animation: burger__line3--animation 0.3s forwards;
+    }
+  }
+}
+@keyframes burger__line1--animation {
+  100% {
+    transform: rotate(45deg) translateX(7px) translateY(-4px);
+  }
+}
+@keyframes burger__line2--animation {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes burger__line3--animation {
+  100% {
+    transform: rotate(-45deg) translateY(-8px) translateX(-13px);
   }
 }

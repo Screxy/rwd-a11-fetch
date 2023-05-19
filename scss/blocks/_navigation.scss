@@ -4,25 +4,37 @@
 
 .navigation__list {
   position: absolute;
+  left: 0;
+  top: 60px;
+  height: 100vh;
   width: 100%;
+  z-index: 1;
   background-color: #fff;
   display: none;
   @include media(min,xl) {
     display: flex;
     position: static;
     align-items: center;
+    height: auto;
   }
 }
 .navigation__list_active {
   overflow: hidden;
   display: block;
 }
+.navigation__item{
+  text-align: center;
+}
 .navigation__item:nth-last-child(1) {
   @include linkBtn();
   border-radius: 20rem;
   margin: 0;
+  width: 100%;
   &>.navigation__link{
       color: color(secondDescColor);
+  }
+  @include media(min,xl){
+    width: auto;
   }
 }
 .navigation__item + .navigation__item{
