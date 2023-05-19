@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a href="#home-section" class="visually-hidden">Go to content</a>
+        <a href="#home-section" class="skip-link">Go to content</a>
         <a href="/index.html" class="header__link">
           <img
             class="header__logo logo"
@@ -28,18 +28,42 @@
             "
           />
         </a>
-        <svg
-          class="header__burger"
-          width="20"
-          height="27"
-          viewBox="0 0 20 27"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="5" width="20" height="4" rx="2" fill="#EF5537" class="header__burger-line1" />
-          <rect x="6" y="14" width="14" height="4" rx="2" fill="#EF5537" class="header__burger-line2" />
-          <rect y="23" width="20" height="4" rx="2" fill="#EF5537" class="header__burger-line3" />
-        </svg>
+        <button class="header__button">
+          <svg
+            class="header__burger"
+            width="20"
+            height="27"
+            viewBox="0 0 20 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              y="5"
+              width="20"
+              height="4"
+              rx="2"
+              fill="#EF5537"
+              class="header__burger-line1"
+            />
+            <rect
+              x="6"
+              y="14"
+              width="14"
+              height="4"
+              rx="2"
+              fill="#EF5537"
+              class="header__burger-line2"
+            />
+            <rect
+              y="23"
+              width="20"
+              height="4"
+              rx="2"
+              fill="#EF5537"
+              class="header__burger-line3"
+            />
+          </svg>
+        </button>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -70,7 +94,7 @@
               <a href="#reviews-section" class="navigation__link">Reviews</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"
+              <a href="animation.html" class="navigation__link"
                 ><img
                   src="/img/Lightning.svg"
                   alt="Lightning icon"

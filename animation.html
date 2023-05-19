@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/anime.css" />
+    <title>Animation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html" class="header__link">
+          <img
+            class="header__logo logo"
+            src="/img/main-logo-Dekstop.png"
+            alt="Mystery Monks logo"
+            width="150"
+            height="30"
+            sizes="(min-width: 1200px) 200w, (min-width: 390px) 150w"
+            srcset="
+              /img/main-logo-Dekstop.webp 1200w,
+              /img/main-logo-Dekstop.png  1200w,
+              /img/main-logo.webp          390w,
+              /img/main-logo.png           390w
+            "
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="animate">
+        <button class="animate__button">Создать новый элемент!</button>
+      </section>
+    </main>
+    <script src="/js/anime.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

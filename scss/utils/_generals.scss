@@ -9,3 +9,15 @@ body {
 html {
   font-size: 62.5%;
 }
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  background: #F498AD;
+  transform: translateY(-2000px);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
