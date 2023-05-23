@@ -1,0 +1,75 @@
+.header__wrapper {
+  display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center;
+}
+@media only screen and (min-width: 390px) {
+  .header__wrapper {
+    min-width: 39rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .header__wrapper {
+    min-width: 57.6rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__wrapper {
+    max-width: 120rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 390px) {
+  .gallery__wrapper {
+    min-width: 39rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .gallery__wrapper {
+    min-width: 57.6rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery__wrapper {
+    max-width: 120rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.temperature__wrapper {
+  display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 390px) {
+  .temperature__wrapper {
+    min-width: 39rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .temperature__wrapper {
+    min-width: 57.6rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .temperature__wrapper {
+    max-width: 120rem;
+    padding: 0 0.5rem;
+  }
+}/*# sourceMappingURL=fetch.css.map */

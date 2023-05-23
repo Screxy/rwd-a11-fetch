@@ -1,0 +1,18 @@
+@use "./utils/mixin" as *;
+.header {
+  &__wrapper {
+    @include wrapper();
+    justify-content: center
+  }
+}
+.gallery{
+    &__wrapper{
+    @include wrapper();
+    }
+}
+.temperature{
+    &__wrapper{
+        @include wrapper();
+    
+    }
+}
