@@ -7,13 +7,13 @@
 }
 @media only screen and (min-width: 390px) {
   .header__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .header__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -33,13 +33,13 @@
 }
 @media only screen and (min-width: 390px) {
   .animate {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .animate {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }

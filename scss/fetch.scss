@@ -3,6 +3,7 @@
 @use "./blocks/form";
 @use "./utils/visually-hidden";
 @use "./utils/grid";
+@use './utils/generals';
 .header {
   &__wrapper {
     @include wrapper();
@@ -12,6 +13,46 @@
 .gallery {
   &__wrapper {
     @include wrapper();
+    flex-direction: column;
+  }
+  &__loading{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    width: 4rem;
+  }
+  &__loading_none{
+    display: none;
+  }
+  &__button {
+    width: 5rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__retry{
+    width: 100%;
+  }
+  &__list{
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__error{
+    @include title();
+    grid-column: 1/-1;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image{
+    width: 100%;
+    height: 100%;
+  }
+  &__item-desc{
+    @include desc();
   }
 }
 .temperature {

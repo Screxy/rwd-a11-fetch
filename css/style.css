@@ -391,13 +391,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .header__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .header__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -473,13 +473,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .home__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .home__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -549,13 +549,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .clients__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .clients__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -751,13 +751,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .description__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .description__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -928,13 +928,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .examples__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .examples__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -986,13 +986,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .feedback__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .feedback__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -1155,13 +1155,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .footer__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .footer__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -1445,13 +1445,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .portfolio__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .portfolio__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }
@@ -1562,13 +1562,13 @@ html {
 }
 @media only screen and (min-width: 390px) {
   .reviews__wrapper {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 0.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .reviews__wrapper {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 0.5rem;
   }
 }

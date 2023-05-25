@@ -7,11 +7,11 @@
   margin: 0 auto;
   padding: 0 1rem;
   @include media(min, xs) {
-    min-width: 39rem;
+    max-width: 39rem;
     padding: 0 .5rem;
   }
   @include media(min, sm) {
-    min-width: 57.6rem;
+    max-width: 57.6rem;
     padding: 0 .5rem;
   }
   @include media(min, xl) {
