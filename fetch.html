@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/fetch.css">
+    <link rel="stylesheet" href="/css/fetch.css" />
 
     <title>Fetch</title>
   </head>
@@ -30,16 +30,40 @@
       </div>
     </header>
     <main>
-        <section class="gallery">
-            <div class="gallery__wrapper">
-
-            </div>
-        </section>
-        <section class="temperature">
-            <div class="temperature__wrapper">
-                
-            </div>
-        </section>
+      <section class="gallery">
+        <div class="gallery__wrapper"></div>
+      </section>
+      <section class="temperature">
+        <div class="temperature__wrapper">
+          <form action="#" class="temperature__form form">
+            <label class="form__label">
+              <span class="visually-hidden">Enter your classroom</span>
+              <input
+                type="text"
+                class="form__class"
+                placeholder="Classroom"
+                required
+              />
+            </label>
+            <label class="form__label">
+              <span class="visually-hidden">Enter temperature</span>
+              <input
+                type="text"
+                step="0.1"
+                class="form__temp"
+                placeholder="Temperature"
+                required
+              />
+            </label>
+            <button type="submit" class="form__submit">Send data</button>
+          </form>
+        </div>
+      </section>
+      <div class="toasts toasts_hidden">
+        <button class="toasts__close">x</button>
+        <div class="toasts__body"></div>
+      </div>
     </main>
+    <script src="/js/fetch.js"></script>
   </body>
 </html>

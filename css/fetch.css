@@ -1,3 +1,245 @@
+.toasts {
+  padding: 1.5rem;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: green;
+}
+.toasts_active {
+  display: block;
+}
+.toasts_hidden {
+  animation: toastsHidden 0.3s forwards;
+}
+@media only screen and (min-width: 1200px) {
+  .toasts {
+    padding: 1rem;
+    min-width: 15rem;
+  }
+}
+
+@keyframes toastsHidden {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.toasts_error {
+  background-color: red;
+}
+
+.toasts__title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #54387f;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .toasts__title {
+    margin-top: 0.8rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+
+.toasts__desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #6a6a6a;
+  color: #fff;
+  margin: 0;
+}
+
+.toasts__close {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  border: none;
+  border-radius: 50px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2.5rem 3rem;
+  background-color: #2a2a2a;
+}
+
+.form__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form__label {
+  margin-top: 2rem;
+  width: 100%;
+}
+.form__label:nth-child(-n+3) {
+  width: calc(50% - 2rem);
+}
+
+.form__name, .form__class, .form__temp, .form__requirement, .form__number, .form__email, .form__surname {
+  width: 100%;
+  background-color: #2a2a2a;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 1.4rem 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+.form__name::-moz-placeholder, .form__class::-moz-placeholder, .form__temp::-moz-placeholder, .form__requirement::-moz-placeholder, .form__number::-moz-placeholder, .form__email::-moz-placeholder, .form__surname::-moz-placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #ffffff;
+}
+.form__name::placeholder, .form__class::placeholder, .form__temp::placeholder, .form__requirement::placeholder, .form__number::placeholder, .form__email::placeholder, .form__surname::placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #ffffff;
+}
+
+.form__requirement {
+  resize: none;
+}
+
+.form__submit {
+  padding: 1.2rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  background-color: #2a2a2a;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: transform 0.1s ease-in;
+  line-height: 2rem;
+}
+.form__submit:active {
+  transform: scale(0.9);
+}
+.form__submit[disabled] {
+  transform: scale(1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-1 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-2 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-3 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-4 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-5 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-6 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-7 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-8 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-9 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-10 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-11 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-12 {
+  height: 50px;
+  border: 3px solid #cdb4db;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
 .header__wrapper {
   display: flex;
   max-width: 32rem;
@@ -49,11 +291,15 @@
   }
 }
 
+.temperature {
+  margin-top: 2rem;
+}
 .temperature__wrapper {
   display: flex;
   max-width: 32rem;
   margin: 0 auto;
   padding: 0 1rem;
+  justify-content: center;
 }
 @media only screen and (min-width: 390px) {
   .temperature__wrapper {

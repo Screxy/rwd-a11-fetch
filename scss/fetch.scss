@@ -1,18 +1,31 @@
 @use "./utils/mixin" as *;
+@use "./blocks/toasts";
+@use "./blocks/form";
+@use "./utils/visually-hidden";
+@use "./utils/grid";
 .header {
   &__wrapper {
     @include wrapper();
-    justify-content: center
+    justify-content: center;
   }
 }
-.gallery{
-    &__wrapper{
+.gallery {
+  &__wrapper {
     @include wrapper();
-    }
+  }
 }
-.temperature{
-    &__wrapper{
-        @include wrapper();
-    
-    }
+.temperature {
+  margin-top: 2rem;
+  &__wrapper {
+    @include wrapper();
+    justify-content: center;
+  }
+}
+.form {
+  &__class {
+    @extend .form__name;
+  }
+  &__temp {
+    @extend .form__name;
+  }
 }

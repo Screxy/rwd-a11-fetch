@@ -110,26 +110,26 @@ function countUniqueValues(arr) {
 console.table(countUniqueValues([1, 2, 1, 2, 3, 4, 2, 5]));
 
 // Задача 7
-const toats = document.querySelector(".toats");
-const toatsClose = document.querySelector(".toats__close");
+const toasts = document.querySelector(".toasts");
+const toastsClose = document.querySelector(".toasts__close");
 const message = {
   name: "Andrew",
   message: "Hello, brow",
 };
-function showToats() {
+function showtoasts() {
   setTimeout(() => {
-    toats.classList.remove("toats_hidden");
-    toats.classList.add("toats_active");
+    toasts.classList.remove("toasts_hidden");
+    toasts.classList.add("toasts_active");
   }, 2000);
   const spanItem = document.createElement("span");
-  spanItem.innerHTML = `<p class="toats__title" >${message.name} </p> <p class="toats__desc">${message.message} </p>`;
-  toats.appendChild(spanItem);
+  spanItem.innerHTML = `<p class="toasts__title" >${message.name} </p> <p class="toasts__desc">${message.message} </p>`;
+  toasts.appendChild(spanItem);
 }
-function hideToats(e) {
-  if (e.target.closest(".toats__close")) {
-    toats.classList.remove("toats_active");
-    toats.classList.add("toats_hidden");
+function hidetoasts(e) {
+  if (e.target.closest(".toasts__close")) {
+    toasts.classList.remove("toasts_active");
+    toasts.classList.add("toasts_hidden");
   }
 }
-document.addEventListener("DOMContentLoaded", showToats);
-toats.addEventListener("click", hideToats);
+document.addEventListener("DOMContentLoaded", showtoasts);
+toasts.addEventListener("click", hidetoasts);

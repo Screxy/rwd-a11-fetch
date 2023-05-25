@@ -1,20 +1,24 @@
 @use "../utils/function" as *;
 @use "../utils/mixin" as *;
 
-.toats {
-  padding: 1rem;
+.toasts {
+  padding: 1.5rem;
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-color: color(primaryTitleColor);
+  background-color: green;
   &_active {
     display: block;
   }
   &_hidden {
-    animation: toatsHidden 0.3s forwards;
+    animation: toastsHidden 0.3s forwards;
+  }
+  @include media(min,xl){
+    padding: 1rem;
+    min-width: 15rem;
   }
 }
-@keyframes toatsHidden {
+@keyframes toastsHidden {
   99% {
     opacity: 0;
   }
@@ -23,17 +27,23 @@
     display: none;
   }
 }
-.toats__title {
+.toasts_error{
+  background-color: red;
+}
+.toasts__title {
   @include subTitle();
+  margin: 0;
   color: #fff;
 }
-.toats__desc {
+.toasts__desc {
   @include desc();
   color: #fff;
+  margin: 0;
 }
-.toats__close {
+.toasts__close {
   position: absolute;
-  right: 1rem;
+  right: .5rem;
+  top: .5rem;
   border: none;
   border-radius: 50px;
 }

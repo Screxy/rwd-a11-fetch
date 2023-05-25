@@ -1,0 +1,23 @@
+.grid-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+@for $i from 1 through 12{
+    .col-#{$i}{
+        height: 50px;
+        border: 3px solid #cdb4db;
+    }
+}
+@mixin grid-col($col-number, $grid-width){
+    .col-#{$col-number}{
+        grid-column: span #{$grid-width};
+    }   
+}
+
+@include grid-col(1, 1);
+@include grid-col(2, 2);
+@include grid-col(3, 3);
+@include grid-col(4, 4);
+@include grid-col(5, 5);

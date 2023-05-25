@@ -54,5 +54,12 @@
   font-style: normal;
   font-weight: 600;
   font-size: 1.4rem;
+  transition: transform 0.1s ease-in;
   line-height: 2rem;
+  &:active {
+    transform: scale(0.9);
+  }
+  &[disabled]{
+    transform: scale(1);
+  }
 }
