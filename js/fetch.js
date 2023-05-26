@@ -4,15 +4,12 @@ const submitButton = form.querySelector(".form__submit");
 function sendRequest(e) {
   e.preventDefault();
   submitButton.disabled = true;
-  console.log("отправляю запрос");
   let body = {
     class: form.querySelector(".form__class").value,
     temp: +form.querySelector(".form__temp").value,
   };
   fetchRequest("POST", tempURL, body).then((response) => {
     submitButton.disabled = false;
-    console.log(response);
-    console.log("запрос пришел");
   });
 }
 
@@ -92,7 +89,6 @@ function loadImages() {
   getImgs("GET", imagesURL).then((response) => {
     loadGif.classList.add("gallery__loading_none");
     if (!Array.isArray(response)) return;
-    console.log(response.length);
     if (response.length === 0) {
       gallery.innerHTML = "<p class='gallery__error' >Images are not found</p>";
       return;
@@ -135,13 +131,10 @@ function getImgs(method, url) {
         const e = new Error("что-то пошло не так");
         e.data = error;
         showToasts(500, error[0]);
-        console.log("from then fetch bad");
         throw e;
       });
     })
     .catch((e) => {
-      console.log("Otvet 500");
-      console.log(e, "from catch fetch");
       return e;
     });
 }
