@@ -97,7 +97,7 @@ function loadImages() {
     toasts.classList.remove("toasts_active");
     toasts.classList.add("toasts_hidden");
     response.forEach((image) => {
-      const imgContainer = document.createElement("div");
+      const imgContainer = document.createElement("li");
       imgContainer.classList.add("gallery__item");
       imgContainer.classList.add("col-3");
       const imgElem = document.createElement("img");
