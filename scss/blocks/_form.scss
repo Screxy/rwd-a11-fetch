@@ -59,7 +59,11 @@
   &:active {
     transform: scale(0.9);
   }
-  &[disabled]{
+  &[disabled] {
     transform: scale(1);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px lightskyblue;
   }
 }

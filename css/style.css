@@ -1320,6 +1320,10 @@ html {
 .form__submit[disabled] {
   transform: scale(1);
 }
+.form__submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
 
 .gallery-list {
   display: grid;
