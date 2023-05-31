@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/vue.css" />
+    <title>Vue</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="/index.html" class="header__link">
+          <img
+            class="header__logo logo"
+            src="/img/main-logo-Dekstop.png"
+            alt="Mystery Monks logo"
+            width="150"
+            height="30"
+            sizes="(min-width: 1200px) 200w, (min-width: 390px) 150w"
+            srcset="
+              /img/main-logo-Dekstop.webp 1200w,
+              /img/main-logo-Dekstop.png  1200w,
+              /img/main-logo.webp          390w,
+              /img/main-logo.png           390w
+            "
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="todo">
+        <div class="todo__wrapper">
+          <div id="app">
+            <form class="todo__form form">
+              <textarea v-model="formData" class="form__requirement" placeholder="Write text!"></textarea>
+              <span v-show="symbolsCount" class="todo__counter" :class="{red: AvailableSymbolsCount<0, orange: AvailableSymbolsCount>=0 && AvailableSymbolsCount<10}"
+                >{{AvailableSymbolsCount}}</span
+              >
+              <button
+                @click.prevent="addToList"
+                :disabled="!formData || 0>AvailableSymbolsCount"
+                class="form__submit"
+              >
+                Add
+              </button>
+            </form>
+            <p v-if="!postsCount" class="todo__text">Записей нет</p>
+            <p v-else-if="postsCount==1" class="todo__text">Запись</p>
+            <p v-else-if="postsCount>1" class="todo__text">
+              Записи <span v-show="postsCount" class="todo__posts-count">{{postsCount}}</span>
+            </p>
+            <ul v-show="postsCount" class="todo__posts">
+              <li v-for="item in elements" class="todo__post">
+                <p class="todo__post-text">{{item.text}}</p>
+                <p class="todo__post-date">{{item.date}}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/js/vue.js"></script>
+  </body>
+</html>

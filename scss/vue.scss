@@ -1,0 +1,72 @@
+@use "./utils/mixin" as *;
+@use "./utils/generals";
+@use "./blocks/form";
+@use "./utils/reset";
+.header {
+  &__wrapper {
+    @include wrapper();
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.red {
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+.todo {
+  &__wrapper {
+    @include wrapper();
+    flex-direction: column;
+    align-items: center;
+  }
+  &__form {
+    position: relative;
+  }
+  &__counter {
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 50%;
+    right: 37px;
+  }
+  &__text {
+    @include secondTitle();
+    margin-top: 1rem;
+  }
+  &__post {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid;
+  }
+  &__post-text {
+    @include subTitle();
+    color: black;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  &__post-date {
+    @include desc();
+    text-align: right;
+  }
+}
+.form {
+  margin-top: 2rem;
+  flex-direction: column;
+  &__requirement {
+    margin-top: 2rem;
+  }
+  &__submit:disabled {
+    opacity: 0.5;
+  }
+  &__requirement::placeholder {
+    opacity: 0.5;
+  }
+}
