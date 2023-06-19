@@ -4,16 +4,15 @@ createApp({
   data() {
     return {
       elements: [],
-      formData: "1",
+      formData: "",
     };
   },
   methods: {
     addToList() {
       this.elements.push({
         text: this.formData,
-        date: this.convertDate
-      }
-        );
+        date: this.convertDate,
+      });
       this.formData = "";
     },
   },
@@ -30,7 +29,7 @@ createApp({
         minute: "numeric",
       }).format(this.date);
     },
-    AvailableSymbolsCount(){
+    AvailableSymbolsCount() {
       return 20 - this.symbolsCount;
     },
     symbolsCount() {
